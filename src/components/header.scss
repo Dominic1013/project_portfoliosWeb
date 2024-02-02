@@ -1,0 +1,186 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    45deg,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+// -------------------------------
+
+.navigation {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 330px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradientColor);
+  border-radius: 30px;
+  ul {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 280px;
+    // border: 3px solid green;
+    .list {
+      position: relative;
+      width: 70px;
+      height: 70px;
+
+      z-index: 1;
+      //   border: 1px solid red;
+      a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+
+        .icon {
+          position: relative;
+          /* 原本是inline element */
+          display: block;
+          line-height: 75px;
+          font-size: 1.5rem;
+          text-align: center;
+          color: #fff;
+          transition: 0.5s;
+        }
+
+        .text {
+          position: absolute;
+          color: #fff;
+          font-weight: 400;
+          font-size: 0.75rem;
+          letter-spacing: 0.05rem;
+
+          /* for hover style opacity */
+          opacity: 0;
+          transform: translateY(20px);
+          transition: 0.5s;
+        }
+
+        .circle {
+          position: absolute;
+          display: block;
+          width: 50px;
+          height: 50px;
+          background: transparent;
+
+          border-radius: 50%;
+          border: 1.8px solid #fff;
+
+          transform: translateY(-37px) scale(0);
+        }
+      }
+    }
+    .active {
+      a {
+        .icon {
+          transform: translateY(-32px);
+        }
+        .text {
+          /* for hover style opacity */
+          opacity: 1;
+          transform: translateY(10px);
+        }
+
+        .circle {
+          transition: 0.5s;
+          transition-delay: 0.5s;
+          transform: translateY(-37px) scale(1);
+        }
+      }
+    }
+    .indicator {
+      position: absolute;
+      top: -50%;
+      width: 70px;
+      height: 70px;
+      background: var(--gradientColor);
+      border-radius: 50%;
+      border: 6px solid var(--bodyColor);
+      transition: 0.5s;
+
+      /* for before, if before absolute didn't set 定位值，follow原本的位置，只是當其他人不存在。 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: -22px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+
+        border-top-right-radius: 20px;
+        /* 用背景色陰影將直角削成圓的，shadow會按照物件角度增加。 */
+        box-shadow: 1px -10px 0 var(--bodyColor);
+        /* box-shadow: 1px -10px 0 #fff; */
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: -22px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+
+        border-top-left-radius: 20px;
+        /* 用背景色陰影將直角削成圓的，shadow會按照物件角度增加。 */
+        box-shadow: -1px -10px 0 var(--bodyColor);
+        /* box-shadow: 1px -10px 0 #fff; */
+      }
+
+      //   li:nth-child(1).active ~ & {
+      //     transform: translateX(calc(70px * 0));
+      //   }
+      //   li:nth-child(2).active ~ & {
+      //     transform: translateX(calc(70px * 1));
+      //   }
+      //   li:nth-child(3).active ~ & {
+      //     transform: translateX(calc(70px * 2));
+      //   }
+      //   li:nth-child(4).active ~ & {
+      //     transform: translateX(calc(70px * 3));
+      //   }
+      //   li:nth-child(5).active ~ & {
+      //     transform: translateX(calc(70px * 4));
+      //   }
+    }
+
+    // indicator with active index move
+    li:nth-child(1).active ~ .indicator {
+      transform: translateX(calc(70px * 0));
+    }
+    li:nth-child(2).active ~ .indicator {
+      transform: translateX(calc(70px * 1));
+    }
+    li:nth-child(3).active ~ .indicator {
+      transform: translateX(calc(70px * 2));
+    }
+    li:nth-child(4).active ~ .indicator {
+      transform: translateX(calc(70px * 3));
+    }
+  }
+}
