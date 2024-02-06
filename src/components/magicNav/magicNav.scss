@@ -18,30 +18,38 @@
 // -------------------------------
 
 .navigation {
-  position: absolute;
-  bottom: 0;
+  position: sticky;
   left: 50%;
+  z-index: 100;
+
+  bottom: -100%;
+  visibility: hidden;
+
+  transition: all 1s ease-in;
+
   transform: translate(-50%, -50%);
 
   width: 330px;
   height: 70px;
+
+  display: flex;
   justify-content: center;
   align-items: center;
   background: var(--gradientColor);
   border-radius: 30px;
+
   ul {
     display: flex;
-    // justify-content: center;
-    // align-items: center;
+
     width: 280px;
-    // border: 3px solid green;
+
     .list {
       position: relative;
       width: 70px;
       height: 70px;
 
       z-index: 1;
-      //   border: 1px solid red;
+
       a {
         position: relative;
         display: flex;
@@ -116,6 +124,7 @@
       background: var(--gradientColor);
       border-radius: 50%;
       border: 6px solid var(--bodyColor);
+      // opacity: 0;
       transition: 0.5s;
 
       /* for before, if before absolute didn't set 定位值，follow原本的位置，只是當其他人不存在。 */
@@ -123,50 +132,35 @@
       justify-content: center;
       align-items: center;
 
-      &::before {
-        position: absolute;
-        content: "";
-        top: 50%;
-        left: -22px;
-        width: 20px;
-        height: 20px;
-        background: transparent;
+      // // 先暫時不使用，背景考慮
+      // &::before {
+      //   position: absolute;
+      //   content: "";
+      //   top: 50%;
+      //   left: -22px;
+      //   width: 20px;
+      //   height: 20px;
+      //   background: transparent;
 
-        border-top-right-radius: 20px;
-        /* 用背景色陰影將直角削成圓的，shadow會按照物件角度增加。 */
-        box-shadow: 1px -10px 0 var(--bodyColor);
-        /* box-shadow: 1px -10px 0 #fff; */
-      }
-      &::after {
-        position: absolute;
-        content: "";
-        top: 50%;
-        right: -22px;
-        width: 20px;
-        height: 20px;
-        background: transparent;
+      //   border-top-right-radius: 20px;
+      //   /* 用背景色陰影將直角削成圓的，shadow會按照物件角度增加。 */
+      //   box-shadow: 1px -10px 0 var(--bodyColor);
+      //   /* box-shadow: 1px -10px 0 #fff; */
+      // }
+      // &::after {
+      //   position: absolute;
+      //   content: "";
+      //   top: 50%;
+      //   right: -22px;
+      //   width: 20px;
+      //   height: 20px;
+      //   background: transparent;
 
-        border-top-left-radius: 20px;
-        /* 用背景色陰影將直角削成圓的，shadow會按照物件角度增加。 */
-        box-shadow: -1px -10px 0 var(--bodyColor);
-        /* box-shadow: 1px -10px 0 #fff; */
-      }
-
-      //   li:nth-child(1).active ~ & {
-      //     transform: translateX(calc(70px * 0));
-      //   }
-      //   li:nth-child(2).active ~ & {
-      //     transform: translateX(calc(70px * 1));
-      //   }
-      //   li:nth-child(3).active ~ & {
-      //     transform: translateX(calc(70px * 2));
-      //   }
-      //   li:nth-child(4).active ~ & {
-      //     transform: translateX(calc(70px * 3));
-      //   }
-      //   li:nth-child(5).active ~ & {
-      //     transform: translateX(calc(70px * 4));
-      //   }
+      //   border-top-left-radius: 20px;
+      //   /* 用背景色陰影將直角削成圓的，shadow會按照物件角度增加。 */
+      //   box-shadow: -1px -10px 0 var(--bodyColor);
+      //   /* box-shadow: 1px -10px 0 #fff; */
+      // }
     }
 
     // indicator with active index move
@@ -183,4 +177,12 @@
       transform: translateX(calc(70px * 3));
     }
   }
+}
+
+.navigationActive {
+  visibility: visible;
+  // opacity: 1;
+  bottom: 0;
+  // transition: opacity 0.2s, bottom 0.5s;
+  transition: all 1s ease-in;
 }

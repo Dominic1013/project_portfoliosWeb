@@ -11,6 +11,9 @@ import {
 
 // Components
 import TopNav from "../../components/topNav/TopNav";
+import Hero from "../../components/hero/Hero";
+
+// ------------------------------------------------------------
 
 export default function Home() {
   // redux things
@@ -19,7 +22,12 @@ export default function Home() {
 
   return (
     <div className="home">
-      <TopNav />
+      <div className="sectionTopNav">
+        <TopNav />
+      </div>
+      <div className="sectionHero">
+        <Hero />
+      </div>
     </div>
   );
 }

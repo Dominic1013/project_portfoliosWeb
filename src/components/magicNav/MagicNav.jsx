@@ -23,6 +23,26 @@ const navData = [
 export default function MagicNav() {
   const location = useLocation();
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  console.log(isVisible);
+
+  const handleScroll = () => {
+    const showAtPosition = 60; // 從哪裏開始顯示navbar, 可以根據需要調整
+
+    if (window.scrollY > showAtPosition) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+  // scrolldown to show magicNav
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // if location change, set 與路徑相同的activeIndex
   useEffect(() => {
@@ -36,7 +56,6 @@ export default function MagicNav() {
       setActiveIndex(3);
     }
   }, [location]);
-
   // put 路徑相同的activeIndex into localStorage.
   useEffect(() => {
     localStorage.setItem("activeIndex", activeIndex.toString());
@@ -51,7 +70,7 @@ export default function MagicNav() {
   };
 
   return (
-    <div className="navigation flex">
+    <div className={`navigation ${isVisible ? "navigationActive" : ""}`}>
       <ul>
         {navData.map((item, index) => (
           <li
