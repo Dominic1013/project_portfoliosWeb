@@ -14,9 +14,17 @@ export default function Hero() {
       <div className="heroImg">
         <img src="/Hero&AboutImgs/HeroImgHalf.PNG" alt="HeroImg" />
       </div>
-
       <div className="ocean">
         <img src="/parallaxImgs/ocean.png" alt="ocean" />
+      </div>
+      <div className="illustrations">
+        <img className="cloud1" src="/parallaxImgs/cloud 1.png" alt="cloud1" />
+        <img className="cloud3" src="/parallaxImgs/cloud 3.png" alt="cloud3" />
+        <img
+          className="surfing"
+          src="/Hero&AboutImgs/Surfing.png"
+          alt="surfing"
+        />
       </div>
     </div>
   );
