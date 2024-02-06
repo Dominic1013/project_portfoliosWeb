@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./header.scss";
+import "./magicNav.scss";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom"; // get current route path
 
@@ -20,7 +20,7 @@ const navData = [
   { to: "/contact", icon: <IoChatbubbleOutline />, text: "Contact" },
 ];
 
-export default function Header() {
+export default function MagicNav() {
   const location = useLocation();
   const [activeIndex, setActiveIndex] = useState(0);
 
