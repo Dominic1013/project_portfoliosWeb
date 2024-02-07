@@ -1,6 +1,9 @@
 import React from "react";
 import "./hero.scss";
 
+// react-type
+import { ReactTyped } from "react-typed";
+
 export default function Hero() {
   return (
     <div className="hero">
@@ -8,7 +11,23 @@ export default function Hero() {
         <div className="contentBox">
           <h1>Hello, I'm Dominic Huang. </h1>
           <h2>I'm a</h2>
-          <h2 className="typingText">Web Frond-end Developer |</h2>
+          {/* <h2 className="typingText">Web Frond-end Developer |</h2> */}
+          <div className="typingText">
+            {" "}
+            <ReactTyped
+              startWhenVisible
+              strings={[
+                "Web Frond-end Developer.",
+                "Coder.",
+                "Explorer.",
+                "Dancer.",
+              ]}
+              typeSpeed={60}
+              backDelay={1000}
+              backSpeed={40}
+              loop={true}
+            />
+          </div>
         </div>
       </div>
       <div className="heroImg">

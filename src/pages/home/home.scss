@@ -23,9 +23,17 @@
 //---------------------------------
 
 .home {
+  position: relative;
   width: 100vw;
   min-height: 100dvh;
   //   overflow: hidden;
+  .sectionTopNav {
+    z-index: 100;
+  }
+
+  .sectionHero {
+    z-index: 8;
+  }
 }
 
 @media screen and (max-width: 768px) {
