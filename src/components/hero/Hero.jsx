@@ -12,12 +12,11 @@ export default function Hero() {
           <h1>Hello, I'm Dominic Huang. </h1>
           <h2>I'm a</h2>
           {/* <h2 className="typingText">Web Frond-end Developer |</h2> */}
-          <div className="typingText">
-            {" "}
+          <h2 className="typingText">
             <ReactTyped
               startWhenVisible
               strings={[
-                "Web Frond-end Developer.",
+                "Frond-end Developer.",
                 "Coder.",
                 "Explorer.",
                 "Dancer.",
@@ -27,7 +26,7 @@ export default function Hero() {
               backSpeed={40}
               loop={true}
             />
-          </div>
+          </h2>
         </div>
       </div>
       <div className="heroImg">

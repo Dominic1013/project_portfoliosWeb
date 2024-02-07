@@ -28,10 +28,12 @@
   min-height: 100dvh;
   //   overflow: hidden;
   .sectionTopNav {
+    position: relative;
     z-index: 100;
   }
 
   .sectionHero {
+    position: relative;
     z-index: 8;
   }
 }

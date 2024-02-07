@@ -7,7 +7,7 @@
 .hero {
   position: relative;
   width: 100vw;
-  height: 100dvh;
+  min-height: 100dvh;
 
   display: flex;
   justify-content: center;
@@ -27,6 +27,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 12rem;
+
     // border: 2px solid red;
     .contentBox {
       height: 100%;
@@ -67,7 +68,6 @@
 
     img {
       max-width: 800px;
-      min-width: 300px;
     }
   }
   .ocean {
@@ -103,7 +103,8 @@
     }
     .surfing {
       position: absolute;
-      width: 500px;
+      //   width: 500px;
+      width: 30%;
       bottom: 20%;
       left: 20%;
       animation: surfing 8s infinite;
@@ -112,23 +113,6 @@
 }
 
 @keyframes surfing {
-  //   0%,
-  //   100% {
-  //     bottom: 20%;
-  //     left: 20%;
-  //   }
-  //   25% {
-  //     bottom: 15%;
-  //     left: 22%;
-  //   }
-  //   50% {
-  //     bottom: 10%;
-  //     left: 18%;
-  //   }
-  //   75% {
-  //     bottom: 15%;
-  //     left: 16%;
-  //   }
   0%,
   100% {
     bottom: 20%;
@@ -149,5 +133,89 @@
   70% {
     bottom: 10%;
     left: 14%;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .hero {
+    .heroImg {
+      img {
+        min-width: 533px;
+      }
+    }
+    .illustrations {
+      .surfing {
+        left: 5%;
+        animation: surfing1225 8s infinite;
+      }
+    }
+  }
+}
+@keyframes surfing1225 {
+  0%,
+  100% {
+    bottom: 20%;
+    left: 5%;
+  }
+  25% {
+    bottom: 15%;
+    left: 7%;
+  }
+  37.5% {
+    bottom: 10%;
+    left: 3%;
+  }
+  50% {
+    bottom: 15%;
+    left: 2%;
+  }
+  70% {
+    bottom: 10%;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .hero {
+    padding: 0rem;
+    .content {
+      min-width: 250px;
+      padding-left: 1rem;
+      .contentBox {
+        min-width: 250px;
+        padding-left: 1rem;
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        .typingText {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 100dvh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .content {
+      width: 100vw;
+      .contentBox {
+        width: 100%;
+      }
+    }
+    .heroImg {
+      width: 100vw;
+      img {
+        max-width: 300px;
+        min-width: 300px;
+      }
+    }
   }
 }
