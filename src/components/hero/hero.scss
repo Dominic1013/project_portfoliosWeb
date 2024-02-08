@@ -14,12 +14,12 @@
   align-items: center;
   padding: 0rem 5rem;
 
-  //   border: 2px solid red;
+  border: 2px solid purple;
   .content,
   .heroImg {
     flex: 1;
     // width: 50%;
-    height: 100%;
+    height: 100dvh;
   }
 
   .content {
@@ -27,8 +27,9 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 12rem;
+    // min-width: ;
 
-    // border: 2px solid red;
+    border: 2px solid red;
     .contentBox {
       height: 100%;
       display: flex;
@@ -61,12 +62,18 @@
     }
   }
   .heroImg {
+    position: relative;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 2px solid green;
+    border: 2px solid green;
 
     img {
+      position: absolute;
+      bottom: 10%;
+
       max-width: 800px;
     }
   }
@@ -136,53 +143,52 @@
   }
 }
 
-@media screen and (max-width: 1225px) {
-  .hero {
-    .heroImg {
-      img {
-        min-width: 533px;
-      }
-    }
-    .illustrations {
-      .surfing {
-        left: 5%;
-        animation: surfing1225 8s infinite;
-      }
-    }
-  }
-}
-@keyframes surfing1225 {
-  0%,
-  100% {
-    bottom: 20%;
-    left: 5%;
-  }
-  25% {
-    bottom: 15%;
-    left: 7%;
-  }
-  37.5% {
-    bottom: 10%;
-    left: 3%;
-  }
-  50% {
-    bottom: 15%;
-    left: 2%;
-  }
-  70% {
-    bottom: 10%;
-    left: 0%;
-  }
-}
+// @media screen and (max-width: 1225px) {
+//   .hero {
+//     .heroImg {
+//       img {
+//         min-width: 533px;
+//       }
+//     }
+//     .illustrations {
+//       .surfing {
+//         left: 5%;
+//         animation: surfing1225 8s infinite;
+//       }
+//     }
+//   }
+// }
+// @keyframes surfing1225 {
+//   0%,
+//   100% {
+//     bottom: 20%;
+//     left: 5%;
+//   }
+//   25% {
+//     bottom: 15%;
+//     left: 7%;
+//   }
+//   37.5% {
+//     bottom: 10%;
+//     left: 3%;
+//   }
+//   50% {
+//     bottom: 15%;
+//     left: 2%;
+//   }
+//   70% {
+//     bottom: 10%;
+//     left: 0%;
+//   }
+// }
 
+// for font-size
 @media screen and (max-width: 1050px) {
   .hero {
     padding: 0rem;
     .content {
-      min-width: 250px;
       padding-left: 1rem;
       .contentBox {
-        min-width: 250px;
         padding-left: 1rem;
         h1 {
           font-size: 1.5rem;
@@ -205,17 +211,90 @@
     flex-wrap: wrap;
     flex-direction: column;
     .content {
-      width: 100vw;
+      width: 100%;
       .contentBox {
         width: 100%;
       }
     }
     .heroImg {
-      width: 100vw;
+      width: 100%;
       img {
-        max-width: 300px;
-        min-width: 300px;
+        bottom: 40%;
+        width: 300px;
       }
     }
+
+    .ocean {
+      height: auto;
+      width: 100%;
+    }
+    .illustrations {
+      z-index: 2;
+      .cloud1 {
+        left: 0;
+        width: 200px;
+        transform: scaleX(1);
+      }
+      .cloud3 {
+        left: auto;
+        right: 10%;
+        width: 200px;
+        transform: scaleX(-1);
+      }
+      .surfing {
+        width: 20%;
+        left: 40%;
+        bottom: 17%;
+        animation: surfingMd 4s infinite linear;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    .heroImg {
+      img {
+        bottom: 25%;
+      }
+    }
+    .illustrations {
+      .surfing {
+        width: 25%;
+        bottom: 13%;
+        left: 38%;
+        animation: surfingSm 4s infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes surfingMd {
+  0%,
+  50%,
+  100% {
+    bottom: 17%;
+    left: 40%;
+  }
+
+  25%,
+  75% {
+    bottom: 16%;
+    left: 39%;
+  }
+}
+
+@keyframes surfingSm {
+  0%,
+  50%,
+  100% {
+    bottom: 13%;
+    left: 38%;
+  }
+
+  25%,
+  75% {
+    bottom: 12%;
+    left: 37%;
   }
 }

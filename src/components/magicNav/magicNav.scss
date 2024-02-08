@@ -18,14 +18,17 @@
 // -------------------------------
 
 .navigation {
-  position: sticky;
+  width: 100%;
+  // position: sticky;
+  position: fixed;
   left: 50%;
   z-index: 100;
 
-  bottom: -100%;
+  // bottom: -100%;
+  bottom: -20%;
   visibility: hidden;
 
-  transition: all 1s ease-in;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   transform: translate(-50%, -50%);
 
@@ -184,6 +187,75 @@
   visibility: visible;
   // opacity: 1;
   bottom: 0;
+  left: 50%;
   // transition: opacity 0.2s, bottom 0.5s;
-  transition: all 1s ease-in;
+  // transition: all 0.5s ease-in;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+// @media screen and (max-width: 768px) {
+//   // .navigation {
+//   //   width: 220px;
+//   //   height: 47px;
+//   //   ul {
+//   //     width: 188px;
+//   //     .list {
+//   //       width: 47px;
+//   //       height: 47px;
+//   //       a {
+//   //         .icon{
+
+//   //         }
+//   //       }
+//   //     }
+//   //   }
+//   // }
+
+//   .navigation > * {
+//     zoom: 0.7;
+//   }
+//   .navigationActive > * {
+//     zoom: 0.7;
+//   }
+//   .navigation {
+//     // width: 220px;
+//     width: 50%;
+//     height: 47px;
+//     justify-content: none;
+//     ul {
+//       // width: 196px;
+//       width: 100%;
+//       padding: 0rem 2px;
+//       .list {
+//         flex: 1;
+//         width: 52.5px;
+//         height: 47px;
+//         a {
+//           height: 100%;
+//           .circle {
+//             width: 40px;
+//             height: 40px;
+//           }
+//         }
+//       }
+//       .indicator {
+//         width: 52.5px;
+//         height: 52.5px;
+//       }
+
+//       // indicator with active index move
+//       li:nth-child(1).active ~ .indicator {
+//         transform: translateX(calc(52.5px * 0));
+//       }
+//       li:nth-child(2).active ~ .indicator {
+//         transform: translateX(calc(52.5px * 1));
+//       }
+//       li:nth-child(3).active ~ .indicator {
+//         transform: translateX(calc(52.5px * 2));
+//       }
+//       li:nth-child(4).active ~ .indicator {
+//         transform: translateX(calc(52.5px * 3));
+//       }
+//     }
+//   }
+// }
