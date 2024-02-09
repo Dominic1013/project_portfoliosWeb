@@ -14,11 +14,10 @@
   align-items: center;
   padding: 0rem 5rem;
 
-  border: 2px solid purple;
   .content,
   .heroImg {
     flex: 1;
-    // width: 50%;
+
     height: 100dvh;
   }
 
@@ -29,7 +28,6 @@
     padding-bottom: 12rem;
     // min-width: ;
 
-    border: 2px solid red;
     .contentBox {
       height: 100%;
       display: flex;
@@ -52,9 +50,6 @@
         font-weight: 700;
       }
       .typingText {
-        // font-size: 3.125rem; // 50px
-        // font-family: "Chakra Petch", sans-serif;
-
         font-weight: 700;
         font-size: 3rem;
         line-height: 4.68rem;
@@ -68,7 +63,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid green;
 
     img {
       position: absolute;
@@ -110,7 +104,7 @@
     }
     .surfing {
       position: absolute;
-      //   width: 500px;
+
       width: 30%;
       bottom: 20%;
       left: 20%;
@@ -142,45 +136,6 @@
     left: 14%;
   }
 }
-
-// @media screen and (max-width: 1225px) {
-//   .hero {
-//     .heroImg {
-//       img {
-//         min-width: 533px;
-//       }
-//     }
-//     .illustrations {
-//       .surfing {
-//         left: 5%;
-//         animation: surfing1225 8s infinite;
-//       }
-//     }
-//   }
-// }
-// @keyframes surfing1225 {
-//   0%,
-//   100% {
-//     bottom: 20%;
-//     left: 5%;
-//   }
-//   25% {
-//     bottom: 15%;
-//     left: 7%;
-//   }
-//   37.5% {
-//     bottom: 10%;
-//     left: 3%;
-//   }
-//   50% {
-//     bottom: 15%;
-//     left: 2%;
-//   }
-//   70% {
-//     bottom: 10%;
-//     left: 0%;
-//   }
-// }
 
 // for font-size
 @media screen and (max-width: 1050px) {
