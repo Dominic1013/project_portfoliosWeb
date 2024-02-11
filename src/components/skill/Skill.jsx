@@ -9,13 +9,23 @@ import "swiper/swiper-bundle.css";
 
 export default function Skill() {
   const [isSlideSmall, setIsSlideSmall] = useState(false);
+  const [isSlideMd, setIsSlideMd] = useState(false);
+  console.log("isSlideSmall " + isSlideSmall);
+  console.log("isSlideMd " + isSlideMd);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        setIsSlideSmall(true);
-      } else {
+      if (768 < window.innerWidth < 1024) {
         setIsSlideSmall(false);
+        setIsSlideMd(true);
+      }
+      if (window.innerWidth <= 768) {
+        setIsSlideSmall(true);
+        setIsSlideMd(false);
+      }
+      if (window.innerWidth >= 1024) {
+        setIsSlideSmall(false);
+        setIsSlideMd(false);
       }
     };
     window.addEventListener("resize", handleResize);
@@ -28,7 +38,33 @@ export default function Skill() {
   return (
     <div className="skill">
       <h2 className="skillTitle">Skill</h2>
-      {isSlideSmall ? (
+      {isSlideMd ? (
+        <Swiper
+          // spaceBetween={50}
+          modules={[Navigation, A11y, Pagination]}
+          slidesPerView={2}
+          navigation={true}
+          pagination={{ clickable: true }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          {skillData.map((category, i) => (
+            <SwiperSlide key={i}>
+              <div className="slideDiv">
+                <h2>{category.category}</h2>
+                <ul>
+                  {category.skills.map((skill) => (
+                    <li key={skill.name}>
+                      <img src={skill.imageUrl} alt={skill.name} />
+                      <p>{skill.name}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : isSlideSmall ? (
         <Swiper
           // spaceBetween={50}
           modules={[Navigation, A11y, Pagination]}
@@ -39,30 +75,21 @@ export default function Skill() {
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide>
-            <div className="changeBox">
-              {/* 創建一個component每一行 */}
-              {/* 用map把component print出來 */}
-              {skillData.map((category, i) => (
-                // 每一個大類別div
-                <div key={i}>
-                  <h2>{category.category}</h2>
-                  <ul>
-                    {category.skills.map((skill) => (
-                      <li key={skill.name}>
-                        <img src={skill.imageUrl} alt={skill.name} />
-                        <p>{skill.name}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          ...
+          {skillData.map((category, i) => (
+            <SwiperSlide key={i}>
+              <div className="slideDiv">
+                <h2>{category.category}</h2>
+                <ul>
+                  {category.skills.map((skill) => (
+                    <li key={skill.name}>
+                      <img src={skill.imageUrl} alt={skill.name} />
+                      <p>{skill.name}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       ) : (
         <Swiper
@@ -95,7 +122,6 @@ export default function Skill() {
             </div>
           </SwiperSlide>
           {/* <SwiperSlide>Slide 2</SwiperSlide> */}
-          ...
         </Swiper>
       )}
     </div>
