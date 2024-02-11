@@ -14,6 +14,7 @@ import TopNav from "../../components/topNav/TopNav";
 import Hero from "../../components/hero/Hero";
 import AboutMe from "../../components/aboutMe/AboutMe";
 import Skill from "../../components/skill/skill";
+import Quote from "../../components/quote/Quote";
 
 // ------------------------------------------------------------
 
@@ -35,6 +36,9 @@ export default function Home() {
       </div>
       <div className="sectionSkill">
         <Skill />
+      </div>
+      <div className="sectionQuote">
+        <Quote />
       </div>
     </div>
   );
