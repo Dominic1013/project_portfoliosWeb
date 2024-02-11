@@ -72,63 +72,6 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ullam
-        quam. Blanditiis possimus quo libero ut fugit sapiente voluptas itaque
-        obcaecati iusto in. Earum aliquam, vitae ut eius dolores placeat eos
-        quos tempora numquam ducimus. Odio atque molestiae excepturi, recusandae
-        reprehenderit vel optio quisquam facilis a officiis sed praesentium
-        maiores, doloribus blanditiis laborum qui eius modi fuga laboriosam ab
-        non ut. Culpa ex distinctio fuga esse dolor error cupiditate, tempora
-        vel, veritatis ducimus molestiae corporis dolorem eum! Dolorum deleniti
-        itaque sapiente aperiam ipsam. Assumenda quia neque officia eaque
-        quisquam dolorem earum inventore excepturi perspiciatis necessitatibus,
-        fugiat iusto ex cum alias in sequi quibusdam veniam ad commodi
-        voluptate, unde voluptatem. Tempora consequatur numquam odio asperiores
-        veniam. Eligendi itaque molestias autem odio veritatis velit
-        necessitatibus molestiae? Cum excepturi nesciunt repudiandae,
-        consectetur voluptas suscipit ratione obcaecati iste enim harum odit
-        dolorum repellendus minima iusto inventore, porro perferendis distinctio
-        dolores, ut omnis nisi. Ullam aliquam aliquid porro hic ducimus quis
-        vitae fugiat! Voluptatibus excepturi ipsa perspiciatis facilis delectus
-        fugit ratione eius, beatae itaque consequuntur officia, nobis aspernatur
-        earum! Dolorum odit ducimus animi delectus, rerum blanditiis! Sequi,
-        nemo explicabo! Unde corporis dignissimos omnis doloribus. Commodi
-        laborum minus officiis, nemo quaerat libero, soluta culpa cum corporis
-        ea nihil qui vel incidunt praesentium fuga harum nostrum consectetur eos
-        mollitia debitis tempora? Iure impedit sapiente provident inventore
-        necessitatibus rerum suscipit quod at facere, incidunt cum vero nihil
-        magni doloribus numquam repellendus odio corporis sequi eaque
-        blanditiis. Dolorum odit praesentium corporis laboriosam magni quaerat,
-        non perspiciatis, nemo nostrum magnam aliquam nihil sequi quasi,
-        blanditiis repellendus tempora nam. Tempore itaque maxime molestias,
-        unde voluptates voluptate aliquam illo magni quibusdam ipsum fugiat sunt
-        accusantium vel suscipit totam error modi labore vero hic quaerat earum
-        veritatis officiis illum quia. Repudiandae architecto inventore odio
-        molestiae culpa a quas quibusdam iure. Consectetur laborum cupiditate
-        eligendi adipisci mollitia tenetur magni ipsa maxime deleniti blanditiis
-        quae aliquam itaque architecto commodi, iure reprehenderit eveniet vitae
-        sed amet, iste perspiciatis. Aliquid veritatis dignissimos quaerat
-        tempore nesciunt, possimus atque commodi ipsum, a culpa vero fugit est
-        sequi nemo nobis. Voluptas molestiae laborum consequuntur, rerum, cum
-        perspiciatis ut expedita doloremque maxime accusamus minus. Quis
-        architecto, soluta quia id dolorem sapiente voluptas tenetur in ducimus
-        nam reprehenderit non, fugiat laudantium omnis cum rerum recusandae
-        expedita saepe voluptates praesentium facilis qui harum a. Ut mollitia
-        non sit modi iste. Repellendus nulla, est minus veniam ea alias ratione
-        iste iusto adipisci dignissimos, tenetur quo omnis aspernatur distinctio
-        non quis vitae molestiae natus eaque perferendis atque necessitatibus
-        nihil quisquam? Nesciunt praesentium iusto voluptas sapiente cum odio
-        possimus sunt est aut debitis officia quaerat vitae eligendi, quas quo
-        corporis quam quos hic exercitationem porro? Commodi natus, quidem cum
-        ratione neque repudiandae. Rerum unde ad dolor iure aspernatur!
-        Voluptates fugiat aspernatur quaerat odit ut praesentium minima
-        repellendus obcaecati. Quibusdam excepturi distinctio enim doloribus,
-        vero molestias obcaecati reiciendis sapiente voluptatibus odit, illum
-        asperiores natus nostrum aut, rerum ut ipsa aliquam. Laborum quod et
-        inventore dolore aspernatur perferendis obcaecati fugit a, explicabo
-        aperiam. Maiores dicta optio fuga laborum!
-      </div>
     </>
   );
 }
