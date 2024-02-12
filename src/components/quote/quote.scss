@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   width: 100vw;
-  height: 80dvh;
+  min-height: 80dvh;
   border: 2px solid red;
   overflow: hidden;
   .quoteText {
@@ -18,6 +18,7 @@
       font-family: "Chakra Petch", sans-serif;
       font-size: 3rem; // 48px
       font-style: italic;
+      font-weight: 700;
       line-height: 4.5rem; // 72px
       color: var(--PrimaryColor);
 
@@ -168,7 +169,64 @@
   //       transform: scaleX(-1);
   //     }
   //   }
+}
+@media screen and (max-width: 1024px) {
+  .quote {
+    .quoteText {
+      h2 {
+        font-size: 2rem; //20px
+      }
+    }
+  }
+}
 
-  @media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
+  .quote {
+    .quoteText {
+      h2 {
+        font-size: 1.25rem; //20px
+        &:nth-child(1) {
+          padding-right: 0rem;
+        }
+        &:nth-child(2) {
+          padding-left: 0rem;
+        }
+      }
+    }
+    .parallax {
+      #cloud3 {
+        width: 200px;
+      }
+      #moon {
+        width: 100px;
+      }
+      #cloud4 {
+        width: 200px;
+      }
+      #ocean {
+        width: 100%;
+        height: auto;
+        img {
+          height: 100%;
+        }
+      }
+      #wave1 {
+        bottom: 11%;
+        width: 100px;
+      }
+      #wave2 {
+        bottom: 12%;
+        left: 10%;
+        width: 150px;
+      }
+      #wave3 {
+        bottom: 12%;
+        width: 100px;
+      }
+      #cloud5Scale {
+        top: 20%;
+        width: 200px;
+      }
+    }
   }
 }
