@@ -16,6 +16,7 @@ import AboutMe from "../../components/aboutMe/AboutMe";
 import Skill from "../../components/skill/skill";
 import Quote from "../../components/quote/Quote";
 import Problem from "../../components/problem/Problem";
+import Portfolios from "../../components/portfolios/Portfolios";
 
 // ------------------------------------------------------------
 
@@ -43,6 +44,9 @@ export default function Home() {
       </div>
       <div className="sectionProblem">
         <Problem />
+      </div>
+      <div className="sectionPortfolios">
+        <Portfolios />
       </div>
       <div className="testWord">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus
