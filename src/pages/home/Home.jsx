@@ -15,6 +15,7 @@ import Hero from "../../components/hero/Hero";
 import AboutMe from "../../components/aboutMe/AboutMe";
 import Skill from "../../components/skill/skill";
 import Quote from "../../components/quote/Quote";
+import Problem from "../../components/problem/Problem";
 
 // ------------------------------------------------------------
 
@@ -39,6 +40,9 @@ export default function Home() {
       </div>
       <div className="sectionQuote">
         <Quote />
+      </div>
+      <div className="sectionProblem">
+        <Problem />
       </div>
       <div className="testWord">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus

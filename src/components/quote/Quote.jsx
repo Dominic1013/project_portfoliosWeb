@@ -125,11 +125,6 @@ export default function Quote() {
                 duration: 500,
                 easing: "easeIn",
                 properties: [
-                  // {
-                  //   startValue: 200,
-                  //   endValue: 0,
-                  //   property: "translateX",
-                  // },
                   {
                     startValue: 200,
                     endValue: 0,
@@ -148,7 +143,6 @@ export default function Quote() {
               src="/parallaxImgs/wave1.png"
               alt="wave1"
               className="parallaxImgs"
-              // style={{ width: "100%", height: "150px" }}
             />
           </Plx>
           {/* wave2 */}
@@ -161,11 +155,6 @@ export default function Quote() {
                 duration: 550,
                 easing: "easeIn",
                 properties: [
-                  // {
-                  //   startValue: -200,
-                  //   endValue: 0,
-                  //   property: "translateX",
-                  // },
                   {
                     startValue: 200,
                     endValue: 0,
@@ -209,7 +198,6 @@ export default function Quote() {
               src="/parallaxImgs/wave3.png"
               alt="wave3"
               className="parallaxImgs"
-              // style={{ width: "100%", height: "150px" }}
             />
           </Plx>
           {/* right */}
@@ -239,17 +227,6 @@ export default function Quote() {
             />
           </Plx>
         </div>
-        {/* <div className="parallax">
-        <img src="/parallaxImgs/cloud1.png" id="cloud1" alt="cloud1" />
-        <img src="/parallaxImgs/cloud3.png" id="cloud3" alt="cloud3" />
-        <img src="/parallaxImgs/cloud4.png" id="cloud4" alt="cloud4" />
-        <img src="/parallaxImgs/cloud5.png" id="cloud5" alt="cloud5" />
-        <img src="/parallaxImgs/moon.png" id="moon" alt="moon" />
-        <img src="/parallaxImgs/ocean.png" id="ocean" alt="ocean" />
-        <img src="/parallaxImgs/wave2.png" id="wave1" alt="wave1" />
-        <img src="/parallaxImgs/wave2.png" id="wave2" alt="wave2" />
-        <img src="/parallaxImgs/wave3.png" id="wave3" alt="wave3" />
-      </div> */}
       </div>
     </div>
   );
