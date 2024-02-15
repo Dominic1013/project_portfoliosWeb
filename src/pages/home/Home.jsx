@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useRef } from "react";
+
 import "./home.scss";
+// import { Link as ScrollLink, Element } from "react-scroll";
 
 //redux
 import { useDispatch, useSelector } from "react-redux";
@@ -18,6 +20,7 @@ import Quote from "../../components/quote/Quote";
 import Problem from "../../components/problem/Problem";
 import Portfolios from "../../components/portfolios/Portfolios";
 import ContactMe from "../../components/contactMe/ContactMe";
+import Footer from "../../components/footer/Footer";
 
 // ------------------------------------------------------------
 
@@ -52,7 +55,10 @@ export default function Home() {
       <div className="sectionContactMe">
         <ContactMe />
       </div>
-      <div className="testWord">
+      <div className="sectionFooter">
+        <Footer />
+      </div>
+      {/* <div className="testWord">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus
         assumenda repudiandae dignissimos eius porro nemo fuga, quia repellendus
         similique necessitatibus! Corrupti molestias fuga natus culpa a ratione
@@ -271,7 +277,7 @@ export default function Home() {
         praesentium aperiam fuga. Eaque molestiae deleniti dicta pariatur amet
         fuga adipisci repellat tempore repellendus cumque. Doloremque accusamus
         blanditiis alias, voluptates sunt inventore odit iste libero quasi.
-      </div>
+      </div> */}
     </div>
   );
 }
