@@ -1,0 +1,138 @@
+//---------------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lilita+One&display=swap");
+
+//---------------------------------
+
+.contactMe {
+  position: relative;
+  width: 100%;
+  height: 80dvh; // be changed
+  background: var(--whiteColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contactBg {
+    position: absolute;
+    z-index: 1;
+    width: 70vw;
+
+    img {
+      width: 100%;
+    }
+  }
+  .contactMeContent {
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h2 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      font-style: italic;
+      font-family: "Chakra Petch", sans-serif;
+      font-weight: 700;
+      text-align: center;
+      color: var(--PrimaryColor);
+    }
+    .cta {
+      padding: 0.7rem 1rem;
+      background: var(--gradientColor);
+      width: fit-content;
+
+      border-radius: 10px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        font-size: 1.5rem;
+        color: var(--whiteColor);
+        font-weight: 600;
+        line-height: 1.875rem; // 30px
+        img {
+          width: 38px;
+          height: 38px;
+        }
+      }
+      &:hover {
+        background: var(--SecondaryColor);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contactMe {
+    .contactBg {
+      width: 700px;
+    }
+    .contactMeContent {
+      gap: 1rem;
+      h2 {
+        font-size: 2rem;
+        line-height: 3.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactMe {
+    height: 50dvh; // be changed
+    .contactBg {
+      width: 90vw;
+      min-width: 540px;
+    }
+
+    .contactMeContent {
+      gap: 0.5rem;
+      h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .cta {
+        padding: 0.5rem 0.8rem;
+        a {
+          font-size: 1rem;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .contactMe {
+    .contactBg {
+      width: 90vw;
+      min-width: 300px;
+    }
+
+    .contactMeContent {
+      gap: 0.3rem;
+      h2 {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+      }
+      .cta {
+        padding: 0.3rem 0.6rem;
+        a {
+          font-size: 1rem;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

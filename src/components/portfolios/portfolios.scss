@@ -8,19 +8,20 @@ img {
   //   display: grid;
   //   place-items: center;
   width: 100%;
-  min-height: fit-content;
+  min-height: 80dvh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
 
   padding: 5rem 0rem;
   //   border: 2px solid red;
 
   .portfoliosH2 {
     display: block;
-    padding-bottom: 3rem;
+    // padding-bottom: 3rem;
     font-size: 3.125rem;
     line-height: 4.7rem;
   }
@@ -155,7 +156,7 @@ img {
 @media screen and (max-width: 768px) {
   .portfolios {
     width: 100%;
-    border: 2px solid red;
+    // border: 2px solid red;
 
     .portfoliosH2 {
       font-size: 1.5rem;
