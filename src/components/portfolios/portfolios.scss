@@ -78,7 +78,7 @@ img {
           text-decoration: none;
           font-weight: 500;
           color: var(--PrimaryColor);
-          margin-bottom: 0.5rem;
+          // margin-bottom: 0.5rem;
           &:hover {
             text-decoration: underline;
           }
@@ -186,7 +186,7 @@ img {
         }
         .cardContent {
           width: 316px;
-          padding: 0rem 2.5rem;
+          padding: 1rem 2.5rem;
           bottom: -7.3rem;
         }
       }

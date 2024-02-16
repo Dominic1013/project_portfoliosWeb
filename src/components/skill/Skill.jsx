@@ -10,8 +10,6 @@ import "swiper/swiper-bundle.css";
 export default function Skill() {
   const [isSlideSmall, setIsSlideSmall] = useState(false);
   const [isSlideMd, setIsSlideMd] = useState(false);
-  console.log("isSlideSmall " + isSlideSmall);
-  console.log("isSlideMd " + isSlideMd);
 
   useEffect(() => {
     const handleResize = () => {

@@ -112,8 +112,18 @@
         font-size: 1.5rem; // 24px
         line-height: 2.25rem; // 36px
       }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .problemWrapper {
+    .problem {
       .problemContent {
         .problemItem {
+          &:nth-child(1) {
+            padding: 2rem 0rem 2rem 2rem;
+          }
         }
       }
     }

@@ -11,7 +11,8 @@
     span {
       font-size: 1rem;
       line-height: 1.5rem;
-      color: var(--textColor);
+
+      color: var(--inputColor);
     }
   }
   .footerIcons {
@@ -24,8 +25,8 @@
     }
     .backTop {
       img {
-        // width: 38px;
-        // cursor: pointer;
+        width: 38px;
+        cursor: pointer;
       }
     }
   }
@@ -33,11 +34,31 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 0rem 3rem;
+    padding: 0rem 2rem;
     .copyright {
       span {
-        font-size: 14px;
+        font-size: 10px;
       }
     }
+    .footerIcons {
+      img {
+        width: 30px;
+        cursor: pointer;
+      }
+      .backTop {
+        width: 30px;
+        img {
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    height: 40px;
+    padding: 0rem 0.5rem;
   }
 }

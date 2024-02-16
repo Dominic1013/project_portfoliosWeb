@@ -24,7 +24,6 @@ export default function MagicNav() {
   const location = useLocation();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-  console.log(isVisible);
 
   const handleScroll = () => {
     const showAtPosition = 60; // 從哪裏開始顯示navbar, 可以根據需要調整
