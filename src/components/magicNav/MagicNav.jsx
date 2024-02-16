@@ -28,12 +28,23 @@ export default function MagicNav() {
 
   const handleScroll = () => {
     const showAtPosition = 60; // 從哪裏開始顯示navbar, 可以根據需要調整
+    const isOverTopNav = window.scrollY > showAtPosition;
+    const isBottom =
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight;
 
-    if (window.scrollY > showAtPosition) {
+    // check magicNav is over topNav or not
+    if (isOverTopNav === true && isBottom === false) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
+    // check magicNav is touch footer or not
+    // if (isBottom) {
+    //   setIsVisible(false);
+    // } else {
+    //   setIsVisible(true);
+    // }
   };
   // scrolldown to show magicNav
   useEffect(() => {
@@ -70,6 +81,7 @@ export default function MagicNav() {
   };
 
   return (
+    // <div className={`navigation ${isVisible ? "navigationActive" : ""}`}>
     <div className={`navigation ${isVisible ? "navigationActive" : ""}`}>
       <ul>
         {navData.map((item, index) => (
