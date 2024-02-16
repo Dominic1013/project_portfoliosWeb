@@ -8,13 +8,14 @@ export default function ContactMe() {
       <div className="contactBg">
         <img src="/contactImgs/contactPaint.png" alt="contactPaint" />
       </div>
+
       <div className="contactMeContent">
         <h2>
           Let's Make Waves Together!
           <br />
           Contact Me.
         </h2>
-        <div className="cta">
+        {/* <div className="cta">
           <Link to="/contact">
             <span>Start</span>
             <img
@@ -22,7 +23,17 @@ export default function ContactMe() {
               alt="profolios_LOGO_FInal_white"
             />
           </Link>
-        </div>
+        </div> */}
+      </div>
+
+      <div className="cta">
+        <Link to="/contact">
+          <span>Start</span>
+          <img
+            src="/final_LOGO/profolios_LOGO_FInal_white.png"
+            alt="profolios_LOGO_FInal_white"
+          />
+        </Link>
       </div>
     </div>
   );
