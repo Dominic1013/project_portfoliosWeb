@@ -1,13 +1,28 @@
-import React from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./portfolios.scss";
 
+//aos
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 export default function Portfolios() {
+  //create a hook to add scroll fade ainmation with aos
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="portfolios">
-      <h2 className="portfoliosH2">Project Highlights</h2>
+      <h2 className="portfoliosH2" data-aos="fade-up">
+        Project Highlights
+      </h2>
       <div className="cards">
-        <article className="cardContainer">
+        <article
+          className="cardContainer"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <img
             src="/portfoliosWeb_portfoliosImgs/portfoliosImg_KeljuWeb.png"
             alt="portfoliosImg_KeljuWeb"
@@ -24,7 +39,11 @@ export default function Portfolios() {
             </Link>
           </div>
         </article>
-        <article className="cardContainer">
+        <article
+          className="cardContainer"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <img
             src="/portfoliosWeb_portfoliosImgs/portfoliosImg_formatHolic.png"
             alt="portfoliosImg_formatHolic"
@@ -42,7 +61,11 @@ export default function Portfolios() {
             </Link>
           </div>
         </article>
-        <article className="cardContainer">
+        <article
+          className="cardContainer"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           <img
             src="/portfoliosWeb_portfoliosImgs/portfoliosImg_danceCourse2.png"
             alt="portfoliosImg_danceCourse2.png"

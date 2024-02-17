@@ -11,9 +11,7 @@ export default function Footer() {
       <div className="copyright">
         <span>COPYRIGHTS RESERVED - Dominic Huang 2024</span>
       </div>
-      {/* <div className="backTop">
-        <img src="/skillsIcons/icons8-up-arrow-48.png" alt="up-arrow"></img>
-      </div> */}
+
       <div className="footerIcons">
         <Link className="backTop" onClick={scrollToTop}>
           <img src="/skillsIcons/icons8-up-arrow-48.png" alt="up-arrow"></img>

@@ -2,9 +2,19 @@ import { useState, useEffect } from "react";
 import "./aboutMe.scss";
 import { Link } from "react-router-dom";
 
+//aos
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 export default function AboutMe() {
   const [aboutImgActive, setaboutImgActive] = useState(false);
 
+  //create a hook to add scroll fade ainmation with aos
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+  // make scroll sticky effect
   useEffect(() => {
     let wrapper = document.querySelector(".aboutWrapper");
     let images = document.querySelectorAll(".aboutImage");
@@ -33,10 +43,12 @@ export default function AboutMe() {
     <>
       <div className="aboutWrapper">
         <div className="aboutMe">
-          <div className="aboutImgBox">
-            {/* <div className="aboutImgBg"></div> */}
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            className="aboutImgBox"
+          >
             <img
-              //   className="aboutImage line"
               className={
                 aboutImgActive
                   ? "aboutImage line lineActive"
@@ -46,7 +58,6 @@ export default function AboutMe() {
               alt="AboutImgLineRegular"
             />
             <img
-              //   className="aboutImage real"
               className={
                 aboutImgActive
                   ? "aboutImage real realActive"
@@ -57,8 +68,14 @@ export default function AboutMe() {
             />
           </div>
           <div className="aboutContent">
-            <h2>About Me</h2>
-            <div className="aboutText">
+            <h2 data-aos="fade-up" data-aos-duration="1000">
+              About Me
+            </h2>
+            <div
+              className="aboutText"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
                 quam possimus vel in fuga sunt repellendus quibusdam, magni

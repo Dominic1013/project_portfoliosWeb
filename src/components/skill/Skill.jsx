@@ -7,9 +7,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
+//aos
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 export default function Skill() {
   const [isSlideSmall, setIsSlideSmall] = useState(false);
   const [isSlideMd, setIsSlideMd] = useState(false);
+
+  //create a hook to add scroll fade ainmation with aos
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -35,7 +44,9 @@ export default function Skill() {
 
   return (
     <div className="skill">
-      <h2 className="skillTitle">Skill</h2>
+      <h2 className="skillTitle" data-aos="fade-up">
+        Skill
+      </h2>
       {isSlideMd ? (
         <Swiper
           // spaceBetween={50}
@@ -43,8 +54,8 @@ export default function Skill() {
           slidesPerView={2}
           navigation={true}
           pagination={{ clickable: true }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           {skillData.map((category, i) => (
             <SwiperSlide key={i}>
@@ -70,8 +81,8 @@ export default function Skill() {
           navigation={true}
           loop={true}
           pagination={{ clickable: true }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           {skillData.map((category, i) => (
             <SwiperSlide key={i}>
@@ -96,8 +107,8 @@ export default function Skill() {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           <SwiperSlide>
             <div className="changeBox">

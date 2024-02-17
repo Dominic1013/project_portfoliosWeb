@@ -38,12 +38,6 @@ export default function MagicNav() {
     } else {
       setIsVisible(false);
     }
-    // check magicNav is touch footer or not
-    // if (isBottom) {
-    //   setIsVisible(false);
-    // } else {
-    //   setIsVisible(true);
-    // }
   };
   // scrolldown to show magicNav
   useEffect(() => {
