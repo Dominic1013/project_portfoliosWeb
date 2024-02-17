@@ -13,14 +13,16 @@ import {
 
 // Components
 import TopNav from "../../components/topNav/TopNav";
-import Hero from "../../components/hero/Hero";
-import AboutMe from "../../components/aboutMe/AboutMe";
-import Skill from "../../components/skill/skill";
-import Quote from "../../components/quote/Quote";
-import Problem from "../../components/problem/Problem";
-import Portfolios from "../../components/portfolios/Portfolios";
-import ContactMe from "../../components/contactMe/ContactMe";
 import Footer from "../../components/footer/Footer";
+
+//homeComponents
+import Hero from "../../components/homeComponents/hero/Hero";
+import AboutMe from "../../components/homeComponents/aboutMe/AboutMe";
+import Skill from "../../components/homeComponents/skill/Skill";
+import Quote from "../../components/homeComponents/quote/Quote";
+import Problem from "../../components/homeComponents/problem/Problem";
+import Portfolios from "../../components/homeComponents/portfolios/Portfolios";
+import ContactMe from "../../components/homeComponents/contactMe/ContactMe";
 
 // ------------------------------------------------------------
 
