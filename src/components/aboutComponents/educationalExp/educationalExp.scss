@@ -1,0 +1,104 @@
+.educationalExp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem;
+  gap: 5rem;
+  background: var(--whiteColor);
+  h2 {
+    font-size: 3.125rem; //50px
+    line-height: 4.7rem; // 60px
+    text-align: center;
+  }
+
+  .eduContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 70%;
+    // border: 2px solid red;
+    p {
+      font-size: 1rem;
+      line-height: 1.7rem;
+      word-spacing: 1px;
+    }
+    span {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--PrimaryColor);
+    }
+
+    .eduFirstBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: start;
+      //   border: 2px solid green;
+
+      .eduFirstPara,
+      .eduSecondPara {
+        flex: 1;
+        padding: 0rem 3rem;
+      }
+    }
+
+    .eduSecondBox {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .educationalExp {
+    .eduContent {
+      width: 90%;
+
+      .eduFirstBox {
+        .eduFirstPara,
+        .eduSecondPara {
+          padding: 0rem 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .educationalExp {
+    .eduContent {
+      width: 100%;
+
+      .eduFirstBox {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        width: 80%;
+        .eduFirstPara,
+        .eduSecondPara {
+          padding: 0rem;
+        }
+      }
+      .eduSecondBox {
+        width: 80%;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 425px) {
+//   .educationalExp {
+//     .eduContent {
+//       .eduFirstBox {
+//         flex-direction: column;
+//         gap: 5rem;
+//         width: 90%;
+//       }
+//       .eduSecondBox {
+//         width: 90%;
+//       }
+//     }
+//   }
+// }
