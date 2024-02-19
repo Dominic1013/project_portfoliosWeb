@@ -38,6 +38,11 @@
     position: relative;
     z-index: 8;
   }
+
+  .sectionContactMe {
+    width: 100%;
+    background: var(--whiteColor);
+  }
 }
 
 @media screen and (max-width: 768px) {

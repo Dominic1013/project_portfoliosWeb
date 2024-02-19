@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRef } from "react";
 
 import "./home.scss";
@@ -24,13 +24,20 @@ import Problem from "../../components/homeComponents/problem/Problem";
 import Portfolios from "../../components/homeComponents/portfolios/Portfolios";
 import ContactMe from "../../components/homeComponents/contactMe/ContactMe";
 
+//aos
+//aos
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 // ------------------------------------------------------------
 
 export default function Home() {
   // redux things
   const dispatch = useDispatch();
   const { language } = useSelector((state) => state.user);
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="home">
       <div className="sectionTopNav">

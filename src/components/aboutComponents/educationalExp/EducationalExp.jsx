@@ -4,16 +4,16 @@ import "./educationalExp.scss";
 export default function EducationalExp() {
   return (
     <div className="educationalExp">
-      <h2>Educational Experience</h2>
+      <h2 data-aos="fade-down">Educational Experience</h2>
       <div className="eduContent">
         <div className="eduFirstBox">
           <div className="eduFirstPara">
-            <p>
+            <p data-aos="fade-right">
               <span>My desire to become a web engineer </span>
               comes from two real needs.
             </p>
             <br />
-            <p>
+            <p data-aos="fade-right" data-aos-delay="200">
               <span>The first need</span> came from my past job, where I aimed
               to make a website that showed a brand image and brought together
               information, acting as an entrance for local development
@@ -25,14 +25,14 @@ export default function EducationalExp() {
             </p>
           </div>
           <div className="eduSecondPara">
-            <p>
+            <p data-aos="fade-left">
               <span>The second reason </span>
               is from my love for dancing. I manage a dance team, and when we
               set up our spots, we use coins to mark where everyone stands. This
               method takes a lot of time and is hard to change once done.
             </p>
             <br />
-            <p>
+            <p data-aos="fade-left" data-aos-delay="200">
               <span>Mixing this </span>
               with what I learned in programming, I was able to make my own
               solutions, feeling proud like when I share my dance. I want to
@@ -42,7 +42,7 @@ export default function EducationalExp() {
           </div>
         </div>
         <div className="eduSecondBox">
-          <p>
+          <p data-aos="fade-up">
             <span>I started </span>
             learning web development by looking at many online places like
             Udemy, YouTube, Medium, MDN, StackOverflow, and more, with extra

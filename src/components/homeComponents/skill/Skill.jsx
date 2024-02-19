@@ -7,18 +7,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
-//aos
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 export default function Skill() {
   const [isSlideSmall, setIsSlideSmall] = useState(false);
   const [isSlideMd, setIsSlideMd] = useState(false);
-
-  //create a hook to add scroll fade ainmation with aos
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
 
   useEffect(() => {
     const handleResize = () => {

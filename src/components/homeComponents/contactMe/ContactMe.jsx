@@ -1,16 +1,7 @@
-import { useEffect } from "react";
 import "./contactMe.scss";
 import { Link } from "react-router-dom";
 
-//aos
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 export default function ContactMe() {
-  //create a hook to add scroll fade ainmation with aos
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
   return (
     <div className="contactMe">
       <div className="contactBg">

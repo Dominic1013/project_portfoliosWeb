@@ -4,13 +4,13 @@ import "./background.scss";
 export default function Background() {
   return (
     <div className="background">
-      <article className="eduBg">
-        <div className="left">
+      <article className="eduBg" data-aos="fade">
+        <div className="left" data-aos="fade-right">
           <h2>education background</h2>
         </div>
         <div className="right">
           <ul className="rightBigUl">
-            <li className="title">
+            <li className="title" data-aos="fade-left" data-aos-delay="200">
               <h3>
                 National Taiwan Normal University | Social and Cultural
                 Industries | Master
@@ -25,7 +25,7 @@ export default function Background() {
                 </li>
               </ul>
             </li>
-            <li className="title">
+            <li className="title" data-aos="fade-left" data-aos-delay="400">
               <h3>
                 National Taiwan Normal University | Adult & Continuing Education
                 | Bachelor
@@ -44,13 +44,13 @@ export default function Background() {
           </ul>
         </div>
       </article>
-      <article className="workExp">
-        <div className="left">
+      <article className="workExp" data-aos="fade">
+        <div className="left" data-aos="fade-right">
           <h2>work experience</h2>
         </div>
         <div className="right">
           <ul className="rightBigUl">
-            <li className="title">
+            <li className="title" data-aos="fade-left" data-aos-delay="200">
               <h3>
                 Tri-Feather Integrated Marketing Enterprise | regional
                 revitalization Full-Time Staff
@@ -65,7 +65,7 @@ export default function Background() {
                 <li>Administrative management</li>
               </ul>
             </li>
-            <li className="title">
+            <li className="title" data-aos="fade-left" data-aos-delay="300">
               <h3>
                 National Taiwan Normal University | Adult and Continuing
                 Education | Administrative Assistant
@@ -78,7 +78,7 @@ export default function Background() {
                 <li>Poster design</li>
               </ul>
             </li>
-            <li className="title">
+            <li className="title" data-aos="fade-left" data-aos-delay="400">
               <h3>
                 Ministry of Education | Public Participation Division | Intern
                 <br />
@@ -90,7 +90,7 @@ export default function Background() {
                 <li>Satisfaction quantitative analysis</li>
               </ul>
             </li>
-            <li className="title">
+            <li className="title" data-aos="fade-left" data-aos-delay="500">
               <h3>
                 Pingtung Youth College | Intern
                 <br />

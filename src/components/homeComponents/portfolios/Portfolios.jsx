@@ -1,17 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./portfolios.scss";
 
-//aos
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 export default function Portfolios() {
-  //create a hook to add scroll fade ainmation with aos
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   return (
     <div className="portfolios">
       <h2 className="portfoliosH2" data-aos="fade-up">

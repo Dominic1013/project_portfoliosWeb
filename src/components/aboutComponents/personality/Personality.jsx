@@ -48,10 +48,15 @@ const personalityData = [
 export default function Personality() {
   return (
     <div className="personality">
-      <h2>Personality</h2>
+      <h2 data-aos="fade-up">Personality</h2>
       <div className="personalityContent">
         {personalityData.map((data) => (
-          <div className="personalityItem" key={data.id}>
+          <div
+            className="personalityItem"
+            key={data.id}
+            data-aos="fade-up"
+            data-aos-delay={50 * data.id}
+          >
             <div className="left">
               <img src={data.icon} alt={data.title} />
               <h3>{data.title}</h3>
