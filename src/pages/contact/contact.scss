@@ -1,0 +1,200 @@
+//---------------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lilita+One&display=swap");
+
+//---------------------------------
+
+.contactWrapper {
+  width: 100vw;
+  min-height: 100dvh;
+  .contact {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    // border: 2px solid red;
+    background: var(--whiteColor);
+
+    .titleSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      h1 {
+        font-size: 3.5rem;
+        line-height: 5.25rem;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 700;
+      }
+      .titleP {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 50%;
+        p {
+        }
+      }
+    }
+
+    .contentSection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      //   border: 2px solid purple;
+
+      h3 {
+        font-size: 2rem;
+        line-height: 3rem;
+        color: var(--PrimaryColor);
+      }
+
+      .spaceDiv {
+        height: 46px;
+        border: 2px solid var(--PrimaryColor);
+      }
+
+      .contentBox {
+        position: relative;
+        width: 700px;
+        background: rgb(10, 109, 159, 5%);
+        padding: 3rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        //右上角的直角框框
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-top: 4px solid var(--PrimaryColor);
+          border-right: 4px solid var(--PrimaryColor);
+          width: 49.7%;
+          height: 50%;
+        }
+        // 左下角的直角框框
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border-bottom: 4px solid var(--PrimaryColor);
+          border-left: 4px solid var(--PrimaryColor);
+          width: 49.7%;
+          height: 50%;
+        }
+
+        .contactItem {
+          width: 500px;
+          display: flex;
+          //   gap: 2rem;
+          //   border: 2px solid red;
+          img {
+            width: 38px;
+          }
+          p {
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+            font-weight: 500;
+            color: var(--PrimaryColor);
+            padding-left: 2rem;
+            padding-right: 0.5rem;
+          }
+          .Copy {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: var(--greyText);
+            border-radius: 10px;
+            color: black;
+
+            font-size: 12px;
+
+            font-weight: 600;
+            padding: 0.5rem 0.5rem;
+            &:hover {
+              color: var(--whiteColor);
+            }
+          }
+
+          .Copied {
+            color: var(--whiteColor);
+          }
+        }
+      }
+
+      .logo {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .contactWrapper {
+    .contact {
+      .titleSection {
+        h1 {
+          font-size: 2.5rem;
+          line-height: 3.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactWrapper {
+    .contact {
+      padding: 5rem 0rem;
+      .titleSection {
+        h1 {
+          text-align: center;
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+        .titleP {
+          width: 80%; //
+        }
+      }
+
+      .contentSection {
+        h3 {
+          font-size: 1.5rem;
+          line-height: 2.25rem;
+        }
+
+        .contentBox {
+          width: 340px;
+          height: 500px;
+          .contactItem {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            p {
+              padding: 0;
+              font-size: 1rem;
+              line-height: 1.5rem;
+            }
+          }
+        }
+        .logo {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
