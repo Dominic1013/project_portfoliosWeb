@@ -1,5 +1,6 @@
 import React from "react";
 import AboutHero from "../../components/aboutComponents/aboutHero/AboutHero";
+import Background from "../../components/aboutComponents/background/Background";
 import EducationalExp from "../../components/aboutComponents/EducationalExp/EducationalExp";
 import Personality from "../../components/aboutComponents/personality/Personality";
 import Footer from "../../components/footer/Footer";
@@ -24,6 +25,9 @@ export default function About() {
       </div>
       <div className="sectionEducationalExp">
         <EducationalExp />
+      </div>
+      <div className="sectionBackground">
+        <Background />
       </div>
       <div className="sectionFooter">
         <Footer />
