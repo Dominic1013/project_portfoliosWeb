@@ -11,12 +11,14 @@ export default function Hero() {
   // i18n
   const { t, i18n } = useTranslation();
 
+  const fontClass = i18n.language === "en" ? "text-en" : "text-tw";
+
   return (
     <div className="hero">
       <div className="content">
         <div className="contentBox">
-          <h1>{t("homeHero.contentH1")}</h1>
-          <h2>{t("homeHero.contentH2")}</h2>
+          <h1 className={fontClass}>{t("homeHero.contentH1")}</h1>
+          <h2 className={fontClass}>{t("homeHero.contentH2")}</h2>
           <h2 className="typingText">
             <ReactTyped
               startWhenVisible

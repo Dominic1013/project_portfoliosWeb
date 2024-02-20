@@ -43,5 +43,20 @@
     "Develop interesting concepts.": "Develop interesting concepts.",
     "Filter the best executable solutions.": "Filter the best executable solutions.",
     "Build prototypes.": "Build prototypes."
+  },
+  "homePortfolios": {
+    "portfoliosH2": " Project Highlights ",
+    "readMore": "Read More",
+    "KeljuWeb": "Kelju Web",
+    "KeljuWebDesc": "Kelju Web is a professional brand identity website featuring a variety of functions including an image homepage, blog, news column, and backend system.",
+    "FormatHolicApp": "FormatHolic App",
+    "FormatHolicAppDesc": "FormatHolic is an app designed for arranging formations, aimed at assisting those troubled by the task of organizing. It features two modes: a basketball tactics mode and a dance choreography mode, making it suitable for various devices.",
+    "DanceCourseWeb": "DanceCourse Web",
+    "DanceCourseWebDesc": "DanceCourse is a dance class booking website where students can view the latest course offerings from dance instructors. Instructors can create course content through DanceCourse Web, making dancing accessible and straightforward."
+  },
+  "contactMe": {
+    "content1": "Let's Make Waves Together!",
+    "content2": "Contact Me.",
+    "cta": "Start"
   }
 }

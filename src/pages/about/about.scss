@@ -4,6 +4,11 @@
   min-height: 100dvh;
   overflow-x: hidden;
 
+  .sectionTopNav {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+  }
   .sectionContactMe {
     width: 100%;
     background: var(--bodyColor);

@@ -44,5 +44,21 @@
     "Develop interesting concepts.": "發展創意概念。",
     "Filter the best executable solutions.": "篩選最佳方案。",
     "Build prototypes.": "建造原型。"
+  },
+  "homePortfolios": {
+    "portfoliosH2": " 作品一覽 ",
+    "readMore": "查看更多",
+    "KeljuWeb": "革路品牌網站",
+    "KeljuWebDesc": "革路品牌網站是一個專業的品牌形象網站，具有包括圖片首頁、部落格、新聞欄和後台系統在內的多種功能。",
+    "FormatHolicApp": "FormatHolic",
+    "FormatHolicAppDesc": "FormatHolic是一款旨在幫助那些被「排隊形」所困擾的人的隊形應用程式。它具有兩種模式：籃球戰術模式和舞蹈編排模式，適用於各種設備。",
+    "DanceCourseWeb": "舞蹈教室預約網站",
+    "DanceCourseWebDesc": "DanceCourse 是一個舞蹈課程預約網站，學生可以查看舞蹈老師的最新課程。老師可以通過後台創建課程內容，使跳舞變得簡單直接。"
+  },
+
+  "contactMe": {
+    "content1": "一起攜手掀起浪花！",
+    "content2": "期待您的聯繫",
+    "cta": "Start"
   }
 }

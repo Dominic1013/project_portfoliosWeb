@@ -40,6 +40,14 @@
       text-align: center;
       color: var(--PrimaryColor);
     }
+
+    .text-en {
+      font-family: "Chakra Petch", sans-serif;
+    }
+    .text-tw {
+      font-family: "Noto Sans TC", sans-serif;
+      font-weight: 700;
+    }
   }
   .cta {
     position: absolute;
