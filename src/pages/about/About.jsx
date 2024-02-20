@@ -22,6 +22,10 @@ import "aos/dist/aos.css";
 export default function About() {
   // i18n
   const { t, i18n } = useTranslation();
+
+  const allFontClass =
+    i18n.language === "en" ? "about allFont-en" : "about allFont-tw";
+
   // scroll to top
   const { pathname } = useLocation();
   useEffect(() => {
@@ -32,7 +36,7 @@ export default function About() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="about">
+    <div className={allFontClass}>
       <div className="sectionTopNav">
         <TopNav />
       </div>

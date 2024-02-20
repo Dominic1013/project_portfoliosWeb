@@ -10,6 +10,13 @@ export default function Contact() {
   // i18n
   const { t, i18n } = useTranslation();
 
+  const allFontClass =
+    i18n.language === "en"
+      ? "contactWrapper allFont-en"
+      : "contactWrapper allFont-tw";
+
+  const fontClass = i18n.language === "en" ? "text-en" : "text-tw";
+
   const [isCopy, setIsCopy] = useState(false);
 
   // email clip
@@ -25,11 +32,12 @@ export default function Contact() {
   };
 
   return (
-    <div className="contactWrapper">
+    // <div className="contactWrapper">
+    <div className={allFontClass}>
       <TopNav />
       <div className="contact">
         <section className="titleSection">
-          <h1 data-aos="fade-up" data-aos-duration="2000">
+          <h1 data-aos="fade-up" data-aos-duration="2000" className={fontClass}>
             {t("contactPage.h1")}
           </h1>
           <div className="titleP">

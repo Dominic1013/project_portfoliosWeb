@@ -10,7 +10,7 @@ export default function Personality() {
 
   return (
     <div className="personality">
-      <h2 data-aos="fade-up">Personality</h2>
+      <h2 data-aos="fade-up">{t("aboutPersonality.title")}</h2>
       <div className="personalityContent">
         {personalityData.map((data) => (
           <div

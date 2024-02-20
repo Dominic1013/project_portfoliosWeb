@@ -10,8 +10,13 @@ export default function Portfolios() {
   // i18n
   const { t, i18n } = useTranslation();
 
+  const allFontClass =
+    i18n.language === "en"
+      ? "portfoliosPageWrapper allFont-en"
+      : "portfoliosPageWrapper allFont-tw";
+
   return (
-    <div className="portfoliosPageWrapper">
+    <div className={allFontClass}>
       <div className="sectionTopNav">
         <TopNav />
       </div>
