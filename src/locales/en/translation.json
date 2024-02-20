@@ -174,5 +174,10 @@
       "title4-li1": "Project planning",
       "title4-li2": "Project execution"
     }
+  },
+
+  "portfoliosPage": {
+    "h2": "Sorry, this webpage is currently being updated. ",
+    "p": "Please click the link below to view the ReadMe on GitHub."
   }
 }
