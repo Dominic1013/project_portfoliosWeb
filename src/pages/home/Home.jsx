@@ -42,6 +42,8 @@ export default function Home() {
   // redux things
   const dispatch = useDispatch();
   const { language } = useSelector((state) => state.user);
+
+  // fade effect with aos
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
