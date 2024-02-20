@@ -120,5 +120,18 @@
     "I proactively seek out and understand things I am passionate about, regularly improve myself, and reflect on my shortcomings.": "對於喜愛事物主動查明了解，定期提升自己，也反思自我不足。",
     "Positive thinking and reframing are the first steps in my problem-solving process and also serve as training during times of crisis and stress.": "正向思考和轉念，是我的問題處理的第一步，也是作為危機抗壓時的訓練。",
     "My education in social education has instilled in me a human-centric value system, which I apply to web development and all aspects of life.": "社會教育的薰陶讓我始終保持以人為本的思考價值，對待網頁開發及所有事物。"
+  },
+  "aboutEducationalExp": {
+    "eduH2": "學習之旅",
+    "first1": "進入",
+    "eduFirstPara1": " 程式世界，源自於我的兩個真實需求。",
+    "first2": "第一個需求",
+    "eduFirstPara2": "來自我的前份工作，想要創造一個品牌形象和資訊彙整的網站，作為在地發展資源的入口。而當我在找尋資源時，意外發現網站的設計有如此多的步。，美感與程式實力並存，並且技術一直在進步，讓產業持續成長，也讓工作者有持續學習的動力，讓我一頭栽入了編碼的學習當中；",
+    "first3": "另一個需求",
+    "eduSecondPara1": "是來自我的興趣 - 跳舞。我自己有一個跳舞團體，每次編排隊形時，都需要拿錢幣出來排隊形，費時傷神。排完錢幣也無法進行回溯，造成許多不必要的時間浪費。而這樣的需求",
+    "first4": "加深",
+    "eduSecondPara2": "我學習程式的熱情，能夠打造解決自己需求的作品，讓人富有成就感，就像分享我所喜愛的舞蹈給他人一樣，我也希望能夠創造解決他人需求的作品，上述的動機讓我決定成為一名網頁工程師，為人們，也為自己的需求奉上更優質的解決方案。",
+    "first5": "我透過",
+    "eduThiredPara": "參閱線上各種資源，開啟我的網頁實踐之旅，從Udemy、Youtube、Medium、MDN、StackOverFlow…等等各式各樣的線上資源進行學習，並輔以ChatGPT AI來輔助學習，建構RoadMap來一步一步建構我的有效學習。"
   }
 }

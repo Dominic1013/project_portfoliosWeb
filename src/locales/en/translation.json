@@ -116,5 +116,19 @@
     "I proactively seek out and understand things I am passionate about, regularly improve myself, and reflect on my shortcomings.": "I proactively seek out and understand things I am passionate about, regularly improve myself, and reflect on my shortcomings.",
     "Positive thinking and reframing are the first steps in my problem-solving process and also serve as training during times of crisis and stress.": "Positive thinking and reframing are the first steps in my problem-solving process and also serve as training during times of crisis and stress.",
     "My education in social education has instilled in me a human-centric value system, which I apply to web development and all aspects of life.": "My education in social education has instilled in me a human-centric value system, which I apply to web development and all aspects of life."
+  },
+
+  "aboutEducationalExp": {
+    "eduH2": "Educational Experience",
+    "first1": "My desire",
+    "eduFirstPara1": " to become a web engineer comes from two real needs.",
+    "first2": "The first need",
+    "eduFirstPara2": " came from my past job, where I aimed to make a website that showed a brand image and brought together information, acting as an entrance for local development resources. When I started looking for resources, I found out there are many steps in making a website, where beauty and coding skills exist together, and ongoing tech updates push industry growth and encourage people to keep learning. This got me deeply into learning how to code.",
+    "first3": "The second reason ",
+    "eduSecondPara1": "is from my love for dancing. I manage a dance team, and when we set up our spots, we use coins to mark where everyone stands. This method takes a lot of time and is hard to change once done.",
+    "first4": "Mixing this ",
+    "eduSecondPara2": "with what I learned in programming, I was able to make my own solutions, feeling proud like when I share my dance. I want to make things that help others too. This is why I chose to be a web engineer, to create better solutions for myself and others.",
+    "first5": "I started ",
+    "eduThiredPara": "learning web development by looking at many online places like Udemy, YouTube, Medium, MDN, StackOverflow, and more, with extra help from ChatGPT AI. I made a plan to guide my learning step by step."
   }
 }
