@@ -60,5 +60,49 @@
     "content1": "一起攜手掀起浪花！",
     "content2": "期待您的聯繫",
     "cta": "Start"
+  },
+
+  "aboutHero": {
+    "sectionTitle": "關於我",
+    "name": "黃翊禔",
+
+    "aboutText1": {
+      "first": "我是",
+      "sentence1": "一位",
+      "highlight1": "前端網頁開發人員",
+      "sentence2": "來自台灣，喜歡優雅的",
+      "highlight2": "解決問題",
+      "sentence3": "及擅長團隊合作。能夠進行",
+      "highlight3": "規劃專案流程",
+      "sentence4": "及",
+      "highlight4": "控制執行流程",
+      "sentence5": "，利用",
+      "highlight5": "問題解決",
+      "sentence6": "的模型來發掘、組織和解決問題，從而創造解決方案。"
+    },
+    "aboutText2": {
+      "first": "除了",
+      "sentence1": "我的專業之外，我對",
+      "highlight1": "舞蹈",
+      "dot": "、",
+      "highlight2": "音樂",
+      "sentence2": "、進行",
+      "highlight3": "交流",
+      "sentence3": "、以及感知",
+      "highlight4": "社會的脈動",
+      "sentence4": "都有著濃厚的興趣。對於有興趣的內容",
+      "highlight5": "我會積極去做了解",
+      "sentence5": "，這使我",
+      "highlight6": "自我成長",
+      "sentence6": "也讓我",
+      "highlight7": "自我反思",
+      "sentence7": "。處理事務上，我非常重視",
+      "highlight8": "正向思考",
+      "sentence8": "和",
+      "highlight9": "轉念",
+      "sentence9": "，將社會學",
+      "highlight10": "以人為本的核心價值",
+      "sentence10": "應用於網頁開發及我所有的工作中。"
+    }
   }
 }

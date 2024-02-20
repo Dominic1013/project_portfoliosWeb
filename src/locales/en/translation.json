@@ -58,5 +58,47 @@
     "content1": "Let's Make Waves Together!",
     "content2": "Contact Me.",
     "cta": "Start"
+  },
+
+  "aboutHero": {
+    "name": "Yi-Ti Huang",
+    "aboutText1": {
+      "first": "I am ",
+      "sentence1": " a",
+      "highlight1": " front-end web developer ",
+      "sentence2": "from Taiwan with a penchant for elegantly",
+      "highlight2": " solving problems ",
+      "sentence3": "and a knack for collaboration. Proficiency in",
+      "highlight3": " planning project workflows ",
+      "sentence4": "and",
+      "highlight4": " controlling their execution ",
+      "sentence5": ", utilizing",
+      "highlight5": " problem-solving ",
+      "sentence6": "models to identify, organize, and address issues, thereby crafting solutions."
+    },
+    "aboutText2": {
+      "first": "Beyond ",
+      "sentence1": "my professional pursuits, I have a fondness for",
+      "highlight1": " dancing",
+      "dot": ",",
+      "highlight2": " music",
+      "sentence2": ", engaging in",
+      "highlight3": " conversations",
+      "sentence3": ", and sensing",
+      "highlight4": " the pulse of society",
+      "sentence4": ". I actively seek to understand and",
+      "highlight5": " immerse myself in my interests",
+      "sentence5": ", which leads to",
+      "highlight6": " personal growth",
+      "sentence6": "and",
+      "highlight7": " introspection",
+      "sentence7": ". I place a high emphasis on",
+      "highlight8": " positive thinking",
+      "sentence8": "and",
+      "highlight9": " perspective shifting",
+      "sentence9": ", applying a",
+      "highlight10": " human-centric core value",
+      "sentence10": " to web development and all aspects of my work."
+    }
   }
 }

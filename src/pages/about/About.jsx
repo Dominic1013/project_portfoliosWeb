@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./about.scss";
 
+//i18n
+import { useTranslation } from "react-i18next";
+
 // components
 import AboutHero from "../../components/aboutComponents/aboutHero/AboutHero";
 import Background from "../../components/aboutComponents/background/Background";
@@ -17,6 +20,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function About() {
+  // i18n
+  const { t, i18n } = useTranslation();
   // scroll to top
   const { pathname } = useLocation();
   useEffect(() => {
