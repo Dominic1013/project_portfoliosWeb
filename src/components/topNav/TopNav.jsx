@@ -48,7 +48,7 @@ export default function TopNav() {
   return (
     <div className="topNav">
       <div className="logoBox">
-        <Link className="logoLink">
+        <Link className="logoLink" to="/">
           <img src="/final_LOGO/profolios_LOGO_FInal.png" alt="logo" />
           <p>DOMINIC</p>
         </Link>
