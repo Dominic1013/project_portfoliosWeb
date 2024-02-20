@@ -1,44 +1,45 @@
 import React from "react";
 import "./background.scss";
 
+//i18n
+import { useTranslation } from "react-i18next";
+
 export default function Background() {
+  // i18n
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="background">
       <article className="eduBg" data-aos="fade">
         <div className="left" data-aos="fade-right" data-aos-duration="2000">
-          <h2>education background</h2>
+          <h2>{t("aboutBackground.eduBg.h2")}</h2>
         </div>
         <div className="right">
           <ul className="rightBigUl">
             <li className="title" data-aos="fade-left" data-aos-duration="2200">
               <h3>
-                National Taiwan Normal University | Social and Cultural
-                Industries | Master
+                {t("aboutBackground.eduBg.title1")}
                 <br />
-                (2020.09 - 2022.09)
+                {t("aboutBackground.eduBg.title1Date")}
               </h3>
               <ul>
-                <li>Master's Thesis Title: </li>
-                <li>
-                  The Policy Analysis of Youth Entrepreneurship in Pingtung
-                  County: The Double Diamond Design Process Perspective
-                </li>
+                <li>{t("aboutBackground.eduBg.title1-li1")}</li>
+                <li>{t("aboutBackground.eduBg.title1-li2")}</li>
               </ul>
             </li>
             <li className="title" data-aos="fade-left" data-aos-duration="2400">
               <h3>
-                National Taiwan Normal University | Adult & Continuing Education
-                | Bachelor
+                {t("aboutBackground.eduBg.title2")}
                 <br />
-                (2016.09 - 2020.06)
+                {t("aboutBackground.eduBg.title2Date")}
               </h3>
 
               <ul>
-                <li>Social Design</li>
-                <li>Social Issues</li>
-                <li>Creative Thinking</li>
-                <li>Sociology</li>
-                <li>Cultural & Creative Industry Development</li>
+                <li>{t("aboutBackground.eduBg.title2-li1")}</li>
+                <li>{t("aboutBackground.eduBg.title2-li2")}</li>
+                <li>{t("aboutBackground.eduBg.title2-li3")}</li>
+                <li>{t("aboutBackground.eduBg.title2-li4")}</li>
+                <li>{t("aboutBackground.eduBg.title2-li5")}</li>
               </ul>
             </li>
           </ul>
@@ -46,60 +47,58 @@ export default function Background() {
       </article>
       <article className="workExp" data-aos="fade">
         <div className="left" data-aos="fade-right">
-          <h2>work experience</h2>
+          <h2>{t("aboutBackground.workExp.h2")}</h2>
         </div>
         <div className="right">
           <ul className="rightBigUl">
             <li className="title" data-aos="fade-left" data-aos-duration="2000">
               <h3>
-                Tri-Feather Integrated Marketing Enterprise | regional
-                revitalization Full-Time Staff
+                {t("aboutBackground.workExp.title1")}
                 <br />
-                (2022.09 - 2023.12)
+                {t("aboutBackground.workExp.title1Date")}
               </h3>
 
               <ul>
-                <li>Planning local development schemes</li>
-                <li>Connecting resources</li>
-                <li>Implementing projects</li>
-                <li>Administrative management</li>
+                <li> {t("aboutBackground.workExp.title1-li1")}</li>
+                <li>{t("aboutBackground.workExp.title1-li2")}</li>
+                <li>{t("aboutBackground.workExp.title1-li3")}</li>
+                <li>{t("aboutBackground.workExp.title1-li4")}</li>
               </ul>
             </li>
             <li className="title" data-aos="fade-left" data-aos-duration="2200">
               <h3>
-                National Taiwan Normal University | Adult and Continuing
-                Education | Administrative Assistant
+                {t("aboutBackground.workExp.title2")}
                 <br />
-                (2020.10 - 2022.09)
+                {t("aboutBackground.workExp.title2Date")}
               </h3>
 
               <ul>
-                <li>Office administration</li>
-                <li>Poster design</li>
+                <li>{t("aboutBackground.workExp.title2-li1")}</li>
+                <li>{t("aboutBackground.workExp.title2-li2")}</li>
               </ul>
             </li>
             <li className="title" data-aos="fade-left" data-aos-duration="2400">
               <h3>
-                Ministry of Education | Public Participation Division | Intern
+                {t("aboutBackground.workExp.title3")}
                 <br />
-                (2020.07 - 2020.08)
+                {t("aboutBackground.workExp.title3Date")}
               </h3>
 
               <ul>
-                <li>Policy analysis</li>
-                <li>Satisfaction quantitative analysis</li>
+                <li>{t("aboutBackground.workExp.title3-li1")}</li>
+                <li>{t("aboutBackground.workExp.title3-li2")}</li>
               </ul>
             </li>
             <li className="title" data-aos="fade-left" data-aos-duration="2600">
               <h3>
-                Pingtung Youth College | Intern
+                {t("aboutBackground.workExp.title4")}
                 <br />
-                (2019.07 - 2019.08)
+                {t("aboutBackground.workExp.title4Date")}
               </h3>
 
               <ul>
-                <li>Project planning</li>
-                <li>Project execution</li>
+                <li>{t("aboutBackground.workExp.title4-li1")}</li>
+                <li>{t("aboutBackground.workExp.title4-li2")}</li>
               </ul>
             </li>
           </ul>

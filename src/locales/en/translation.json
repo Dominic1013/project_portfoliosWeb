@@ -130,5 +130,49 @@
     "eduSecondPara2": "with what I learned in programming, I was able to make my own solutions, feeling proud like when I share my dance. I want to make things that help others too. This is why I chose to be a web engineer, to create better solutions for myself and others.",
     "first5": "I started ",
     "eduThiredPara": "learning web development by looking at many online places like Udemy, YouTube, Medium, MDN, StackOverflow, and more, with extra help from ChatGPT AI. I made a plan to guide my learning step by step."
+  },
+
+  "aboutBackground": {
+    "eduBg": {
+      "h2": "Education Background",
+
+      "title1": "National Taiwan Normal University | Social and Cultural Industries | Master",
+      "title1Date": "(2020.09 - 2022.09)",
+      "title1-li1": "Master's Thesis Title:",
+      "title1-li2": "The Policy Analysis of Youth Entrepreneurship in Pingtung County: The Double Diamond Design Process Perspective",
+
+      "title2": "National Taiwan Normal University | Adult & Continuing Education | Bachelor",
+      "title2Date": "(2016.09 - 2020.06)",
+      "title2-li1": "Social Design",
+      "title2-li2": "Social Issues",
+      "title2-li3": "Creative Thinking",
+      "title2-li4": "Sociology",
+      "title2-li5": "Cultural & Creative Industry Development"
+    },
+    "workExp": {
+      "h2": "Work Experience",
+
+      "title1": "Tri-Feather Integrated Marketing Enterprise | regional revitalization Full-Time Staff",
+      "title1Date": "(2022.09 - 2023.12)",
+      "title1-li1": "Planning local development schemes",
+      "title1-li2": "Connecting resources",
+      "title1-li3": "Implementing projects",
+      "title1-li4": "Administrative management",
+
+      "title2": "National Taiwan Normal University | Adult and Continuing Education | Administrative Assistant",
+      "title2Date": "(2020.10 - 2022.09)",
+      "title2-li1": "Office administration",
+      "title2-li2": "Poster design",
+
+      "title3": "Ministry of Education | Public Participation Division | Intern",
+      "title3Date": "(2020.07 - 2020.08)",
+      "title3-li1": "Policy analysis",
+      "title3-li2": "Satisfaction quantitative analysis",
+
+      "title4": "Pingtung Youth College | Intern",
+      "title4Date": "(2019.07 - 2019.08)",
+      "title4-li1": "Project planning",
+      "title4-li2": "Project execution"
+    }
   }
 }
