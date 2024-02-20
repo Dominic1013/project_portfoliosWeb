@@ -23,9 +23,9 @@ export default function Contact() {
       <TopNav />
       <div className="contact">
         <section className="titleSection">
-          <h1>Flow with me into new possibilities!</h1>
+          <h1 data-aos="fade-up">Flow with me into new possibilities!</h1>
           <div className="titleP">
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2500">
               I eagerly anticipate our communication. Your message is of great
               importance to me.
               <br />
@@ -34,7 +34,11 @@ export default function Contact() {
           </div>
         </section>
 
-        <section className="contentSection">
+        <section
+          className="contentSection"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <h3>Yi-Ti Huang</h3>
           <div className="spaceDiv"></div>
           <div className="contentBox">
