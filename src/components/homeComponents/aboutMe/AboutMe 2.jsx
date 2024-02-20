@@ -2,13 +2,7 @@ import { useState, useEffect } from "react";
 import "./aboutMe.scss";
 import { Link } from "react-router-dom";
 
-//i18n
-import { useTranslation } from "react-i18next";
-
 export default function AboutMe() {
-  // i18n
-  const { t, i18n } = useTranslation();
-
   const [aboutImgActive, setaboutImgActive] = useState(false);
 
   // make scroll sticky effect
@@ -18,7 +12,7 @@ export default function AboutMe() {
     window.addEventListener("scroll", () => {
       //要看的是滾動的百分比，所以要扣掉視窗（要觀察的是你要滾動才看的到的範圍）
       // (在容器內已滾動的距離 / 容器可滾動總距離) * 100 ＝ 目前的滾動百分比
-
+      // console.log(wrapper.offsetTop);
       //在容器內滾動的距離（不得小於0）
       let topPos = wrapper.offsetTop;
       let nowDistance = window.scrollY - topPos;
@@ -66,16 +60,21 @@ export default function AboutMe() {
           </div>
           <div className="aboutContent">
             <h2 data-aos="fade-up" data-aos-duration="1000">
-              {t("homeAbout.AboutMe")}
+              About Me
             </h2>
             <div
               className="aboutText"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <p>{t("homeAbout.aboutText")}</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                quam possimus vel in fuga sunt repellendus quibusdam, magni
+                dolorum modi, tempore necessitatibus natus laboriosam,
+                doloremque ad voluptatibus neque quae explicabo!
+              </p>
               <div className="cta">
-                <Link to="/about">{t("homeAbout.cta")}</Link>
+                <Link to="/about">GO Deep</Link>
               </div>
             </div>
           </div>

@@ -2,16 +2,15 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./topNav.scss";
 
-//i18n
-
-import { useTranslation, Trans } from "react-i18next";
-
 //redux
 import { useDispatch, useSelector } from "react-redux";
 import {
   languageChangeToEN,
   languageChangeToTW,
 } from "../../redux/user/userSlice";
+
+//i18n
+import { useTranslation } from "react-i18next";
 
 export default function TopNav() {
   // i18n

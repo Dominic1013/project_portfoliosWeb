@@ -7,13 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
-//i18n
-import { useTranslation } from "react-i18next";
-
 export default function Skill() {
-  // i18n
-  const { t, i18n } = useTranslation();
-
   const [isSlideSmall, setIsSlideSmall] = useState(false);
   const [isSlideMd, setIsSlideMd] = useState(false);
 
@@ -42,7 +36,7 @@ export default function Skill() {
   return (
     <div className="skill">
       <h2 className="skillTitle" data-aos="fade-up">
-        {t("homeSkill.Skill")}
+        Skill
       </h2>
       {isSlideMd ? (
         <Swiper
@@ -57,7 +51,7 @@ export default function Skill() {
           {skillData.map((category, i) => (
             <SwiperSlide key={i}>
               <div className="slideDiv">
-                <h2>{t(`homeSkill.${category.category}`)}</h2>
+                <h2>{category.category}</h2>
                 <ul>
                   {category.skills.map((skill) => (
                     <li key={skill.name}>
@@ -84,7 +78,7 @@ export default function Skill() {
           {skillData.map((category, i) => (
             <SwiperSlide key={i}>
               <div className="slideDiv">
-                <h2>{t(`homeSkill.${category.category}`)}</h2>
+                <h2>{category.category}</h2>
                 <ul>
                   {category.skills.map((skill) => (
                     <li key={skill.name}>
@@ -99,6 +93,7 @@ export default function Skill() {
         </Swiper>
       ) : (
         <Swiper
+          // spaceBetween={50}
           modules={[Navigation, A11y, Pagination]}
           slidesPerView={1}
           navigation
@@ -108,10 +103,12 @@ export default function Skill() {
         >
           <SwiperSlide>
             <div className="changeBox">
+              {/* 創建一個component每一行 */}
+              {/* 用map把component print出來 */}
               {skillData.map((category, i) => (
                 // 每一個大類別div
                 <div key={i}>
-                  <h2>{t(`homeSkill.${category.category}`)}</h2>
+                  <h2>{category.category}</h2>
                   <ul>
                     {category.skills.map((skill) => (
                       <li key={skill.name}>

@@ -1,0 +1,105 @@
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: var(--whiteColor);
+  // border: 2px solid red;
+  padding: 5rem 0rem;
+  .skillTitle {
+    font-size: 3.125rem; //50px
+    line-height: 3.75rem; //60px
+  }
+  .swiper {
+    width: 100%;
+    .swiper-wrapper {
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // border: 2px solid red;
+        .changeBox {
+          display: flex;
+          width: 80%;
+          gap: 3rem;
+          //   border: 2px solid red;
+          div {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            // border: 1px solid green;
+            h2 {
+              width: max-content;
+              padding: 0rem 1rem;
+              border-left: 2px solid black;
+              border-right: 2px solid black;
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+            ul {
+              width: 100%;
+              max-width: 313px;
+              //   border: 2px solid black;
+
+              li {
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                gap: 10px;
+                border-top: 1px solid var(--greyText);
+                img {
+                  width: 30px;
+                }
+                p {
+                  font-size: 1rem;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+
+        //this is slide of max-width:768px
+        .slideDiv {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 3rem;
+          //   border: 2px solid red;
+          h2 {
+            width: max-content;
+            padding: 0rem 1rem;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+          ul {
+            width: 100%;
+            max-width: 313px;
+            //   border: 2px solid black;
+
+            li {
+              display: flex;
+              align-items: center;
+              padding: 1rem;
+              gap: 10px;
+              border-top: 1px solid var(--greyText);
+              img {
+                width: 30px;
+              }
+              p {
+                font-size: 1rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

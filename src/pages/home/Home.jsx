@@ -28,9 +28,15 @@ import ContactMe from "../../components/homeComponents/contactMe/ContactMe";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+//i18n
+import { useTranslation } from "react-i18next";
+
 // ------------------------------------------------------------
 
 export default function Home() {
+  // i18n
+  const { t, i18n } = useTranslation();
+
   // scroll to top
   const { pathname } = useLocation();
   useEffect(() => {

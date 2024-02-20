@@ -1,0 +1,174 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    45deg,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.aboutWrapper {
+  position: relative;
+  height: 300vh;
+  width: 100%;
+  padding: 5rem 0rem 10rem 0rem;
+  background: var(--whiteColor);
+
+  .aboutMe {
+    position: sticky;
+    top: 0;
+    height: 80vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem 3rem;
+    gap: 1rem;
+    // border: 2px solid red;
+    .aboutImgBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 50%;
+      height: 100%;
+      //   border: 2px solid blue;
+      &::after {
+        position: absolute;
+        bottom: 7.3%;
+        z-index: -1;
+        content: "";
+        width: 419px;
+        height: 419px;
+        background: var(--cardBG);
+        border-radius: 10px;
+      }
+
+      .aboutImage {
+        height: 500px;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        transition: 4s;
+        // border: 2px solid red;
+      }
+      .line {
+        opacity: 1;
+      }
+      .real {
+        opacity: 0;
+      }
+      //   .line:hover {
+      //     opacity: 0;
+      //   }
+      //   .real:hover {
+      //     opacity: 1;
+      //   }
+
+      .lineActive {
+        opacity: 0;
+      }
+
+      .realActive {
+        opacity: 1;
+      }
+
+      //   border: 2px solid blue;
+    }
+    .aboutContent {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding-right: 3rem;
+      h2 {
+        font-size: 3.125rem; //50px
+        line-height: 75px;
+        font-weight: 700;
+      }
+      //   border: 1px solid green;
+      .aboutText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 1rem;
+
+        p {
+          font-size: 1rem;
+          line-height: 24px;
+        }
+        .cta {
+          padding: 0.5rem 1rem;
+          background: var(--gradientColor);
+          width: fit-content;
+
+          border-radius: 10px;
+          a {
+            font-size: 1.25rem;
+            color: var(--whiteColor);
+            font-weight: 600;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutWrapper {
+    .aboutMe {
+      flex-wrap: wrap;
+      height: 80vh;
+      //   border: 2px solid red;
+      .aboutImgBox {
+        width: 100%;
+        height: 40vh;
+
+        &::after {
+          width: 251px;
+          height: 251px;
+          bottom: 5.3%;
+        }
+        .aboutImage {
+          height: 300px;
+        }
+      }
+      .aboutContent {
+        height: fit-content;
+        width: 100%;
+        padding-right: 0rem;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        // text-align: center;
+        // border: 1px solid green;
+        h2 {
+          font-size: 40px;
+        }
+        .aboutText {
+          align-items: center;
+          .cta {
+            a {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

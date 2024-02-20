@@ -4,19 +4,14 @@ import "./hero.scss";
 // react-type
 import { ReactTyped } from "react-typed";
 
-//i18n
-import { useTranslation } from "react-i18next";
-
 export default function Hero() {
-  // i18n
-  const { t, i18n } = useTranslation();
-
   return (
     <div className="hero">
       <div className="content">
         <div className="contentBox">
-          <h1>{t("homeHero.contentH1")}</h1>
-          <h2>{t("homeHero.contentH2")}</h2>
+          <h1>Hello, I'm Dominic Huang. </h1>
+          <h2>I'm a</h2>
+          {/* <h2 className="typingText">Web Frond-end Developer |</h2> */}
           <h2 className="typingText">
             <ReactTyped
               startWhenVisible

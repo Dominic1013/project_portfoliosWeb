@@ -4,5 +4,45 @@
     "About": "關於",
     "Portfolios": "作品",
     "Contact": "聯繫"
+  },
+
+  "homeHero": {
+    "contentH1": "嗨！我是黃翊禔",
+    "contentH2": "我是一個"
+  },
+  "homeAbout": {
+    "AboutMe": "關於我",
+    "aboutText": "我是一名來自台灣的網頁前端工程師，喜歡優雅的解決問題，善於合作，規劃專案流程、控制執行流程，透過問題解決模型來發現、疏理問題，篩選作法進而創造解方。除此之外，我喜歡跳舞、喜歡音樂，喜歡與人對話，感知社會脈動。對於喜愛的事物主動了解，更新自我，省思自己。我非常注重正向思考及轉念，並透過以人為本的核心價值來執行網頁開發及每一件事項。",
+    "cta": "潛入"
+  },
+  "homeSkill": {
+    "Skill": "技能",
+    "Frontend Dev": "前端開發",
+    "Backend Dev": "後端開發",
+    "Dev Tools": "開發工具",
+    "Design": "設計工具"
+  },
+  "homeQuote": {
+    "quoteText1": "如春水般融入團隊 ",
+    "quoteText2": "亦如浪濤般勇敢挑戰"
+  },
+  "homeProblem": {
+    "problemH2": "我如何",
+    "problemSpan": "解決問題？",
+    "Discover": "發現",
+    "Define": "定義",
+    "Deliver": "發展",
+    "Develop": "實行",
+
+    "What do users want to do?": "用戶想要什麼？",
+    "Identify the problems behind the behaviors.": "識別潛在問題。",
+    "Read all materials related to the questions.": "閱讀相關資訊。",
+    "Filter out the core problems.": "篩選核心問題。",
+    "Define the needs of the core problems.": "定義核心需求。",
+    "Brainstorming.": "腦力激盪。",
+    "Conceive various solutions.": "構思各種解方。",
+    "Develop interesting concepts.": "發展創意概念。",
+    "Filter the best executable solutions.": "篩選最佳方案。",
+    "Build prototypes.": "建造原型。"
   }
 }

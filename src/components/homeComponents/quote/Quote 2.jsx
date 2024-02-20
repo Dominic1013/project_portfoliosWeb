@@ -2,21 +2,13 @@ import React from "react";
 import "./quote.scss";
 import Plx from "react-plx";
 
-//i18n
-import { useTranslation } from "react-i18next";
-
 export default function Quote() {
-  // i18n
-  const { t, i18n } = useTranslation();
-
-  const fontClass = i18n.language === "en" ? "text-en" : "text-tw";
-
   return (
     <div className="wrapperQoute">
       <div className="quote">
         <div className="quoteText">
-          <h2 className={fontClass}>{t("homeQuote.quoteText1")}</h2>
-          <h2 className={fontClass}>{t("homeQuote.quoteText2")}</h2>
+          <h2>Blend into the team like water, </h2>
+          <h2>dare to challenge like the waves.</h2>
         </div>
         <div className="parallax">
           {/* left */}

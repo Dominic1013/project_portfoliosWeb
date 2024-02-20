@@ -4,5 +4,44 @@
     "About": "About",
     "Portfolios": "Portfolios",
     "Contact": "Contact"
+  },
+  "homeHero": {
+    "contentH1": "Hello, I'm Dominic Huang. ",
+    "contentH2": "I'm a"
+  },
+  "homeAbout": {
+    "AboutMe": "About Me",
+    "aboutText": "I am a front-end web developer from Taiwan with a penchant for elegantly solving problems and a knack for collaboration. I am proficient in planning project workflows and controlling their execution, utilizing problem-solving models to identify, organize, and address issues, thereby crafting solutions.",
+    "cta": "Go Deep"
+  },
+  "homeSkill": {
+    "Skill": "Skill",
+    "Frontend Dev": "Frontend Dev",
+    "Backend Dev": "Backend Dev",
+    "Dev Tools": "Dev Tools",
+    "Design": "Design"
+  },
+  "homeQuote": {
+    "quoteText1": "Blend into the team like water, ",
+    "quoteText2": "are to challenge like the waves."
+  },
+  "homeProblem": {
+    "problemH2": "How Do I ",
+    "problemSpan": "Resolve Problem ?",
+    "Discover": "Discover",
+    "Define": "Define",
+    "Deliver": "Deliver",
+    "Develop": "Develop",
+
+    "What do users want to do?": "What do users want to do?",
+    "Identify the problems behind the behaviors.": "Identify the problems behind the behaviors.",
+    "Read all materials related to the questions.": "Read all materials related to the questions.",
+    "Filter out the core problems.": "Filter out the core problems.",
+    "Define the needs of the core problems.": "Define the needs of the core problems.",
+    "Brainstorming.": "Brainstorming.",
+    "Conceive various solutions.": "Conceive various solutions.",
+    "Develop interesting concepts.": "Develop interesting concepts.",
+    "Filter the best executable solutions.": "Filter the best executable solutions.",
+    "Build prototypes.": "Build prototypes."
   }
 }
