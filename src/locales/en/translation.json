@@ -23,7 +23,7 @@
   },
   "homeQuote": {
     "quoteText1": "Blend into the team like water, ",
-    "quoteText2": "are to challenge like the waves."
+    "quoteText2": "dare to challenge like the waves."
   },
   "homeProblem": {
     "problemH2": "How Do I ",
@@ -61,7 +61,7 @@
   },
 
   "aboutHero": {
-    "name": "Yi-Ti Huang",
+    "name": "Dominic Huang",
     "aboutText1": {
       "first": "I am ",
       "sentence1": " a",
@@ -184,6 +184,6 @@
     "h1": "Flow with me into new possibilities!",
     "p1": "I eagerly anticipate our communication. Your message is of great importance to me.",
     "p2": "Together, let's explore opportunities for collaboration.",
-    "name": "Yi-Ti Huang"
+    "name": "Dominic Huang"
   }
 }
