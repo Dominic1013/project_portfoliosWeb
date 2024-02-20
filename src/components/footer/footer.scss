@@ -19,9 +19,11 @@
     width: max-content;
     display: flex;
 
-    img {
-      width: 38px;
-      cursor: pointer;
+    a {
+      img {
+        width: 38px;
+        cursor: pointer;
+      }
     }
     .backTop {
       img {
@@ -41,9 +43,11 @@
       }
     }
     .footerIcons {
-      img {
-        width: 30px;
-        cursor: pointer;
+      a {
+        img {
+          width: 30px;
+          cursor: pointer;
+        }
       }
       .backTop {
         width: 30px;

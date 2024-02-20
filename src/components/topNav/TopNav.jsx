@@ -71,7 +71,9 @@ export default function TopNav() {
       </div>
       <div className="socialAndLan">
         <div className="social">
-          <img src="/navBarImgs/navBar_github.PNG" alt="gitHub" />
+          <a href="https://github.com/Dominic1013" target="_blank">
+            <img src="/navBarImgs/navBar_github.PNG" alt="gitHub" />
+          </a>
         </div>
 
         <div className="lanDropdown" onClick={handleDropdown}>

@@ -16,7 +16,9 @@ export default function Footer() {
         <Link className="backTop" onClick={scrollToTop}>
           <img src="/skillsIcons/icons8-up-arrow-48.png" alt="up-arrow"></img>
         </Link>
-        <img src="/skillsIcons/35_github_icon.png" alt="github_icon"></img>
+        <a href="https://github.com/Dominic1013" target="_blank">
+          <img src="/skillsIcons/35_github_icon.png" alt="github_icon"></img>
+        </a>
       </div>
     </div>
   );

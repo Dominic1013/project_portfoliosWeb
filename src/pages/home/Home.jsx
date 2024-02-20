@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 import "./home.scss";
 // import { Link as ScrollLink, Element } from "react-scroll";
@@ -32,6 +33,12 @@ import "aos/dist/aos.css";
 // ------------------------------------------------------------
 
 export default function Home() {
+  // scroll to top
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   // redux things
   const dispatch = useDispatch();
   const { language } = useSelector((state) => state.user);
