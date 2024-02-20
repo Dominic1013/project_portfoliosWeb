@@ -11,7 +11,6 @@ export default function Hero() {
         <div className="contentBox">
           <h1>Hello, I'm Dominic Huang. </h1>
           <h2>I'm a</h2>
-          {/* <h2 className="typingText">Web Frond-end Developer |</h2> */}
           <h2 className="typingText">
             <ReactTyped
               startWhenVisible

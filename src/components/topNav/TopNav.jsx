@@ -2,6 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./topNav.scss";
 
+//i18n
+
+import { useTranslation, Trans } from "react-i18next";
+
 //redux
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -10,6 +14,9 @@ import {
 } from "../../redux/user/userSlice";
 
 export default function TopNav() {
+  // i18n
+  const { t, i18n } = useTranslation();
+
   // redux things
   const dispatch = useDispatch();
   const { language } = useSelector((state) => state.user);
@@ -33,7 +40,8 @@ export default function TopNav() {
       setENFlagClass(false);
     }
   };
-  const handleLanFlag = () => {
+
+  const handleLanFlag = (lan) => {
     if (!TWFlagClass) {
       setENFlagClass(false);
       setTWFlagClass(true);
@@ -43,6 +51,8 @@ export default function TopNav() {
       setTWFlagClass(false);
       dispatch(languageChangeToEN());
     }
+
+    i18n.changeLanguage(lan);
   };
 
   return (
@@ -56,16 +66,16 @@ export default function TopNav() {
       <div className="links">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t("topnav.Home")}</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">{t("topnav.About")}</Link>
           </li>
           <li>
-            <Link to="/portfolios">Portfolios</Link>
+            <Link to="/portfolios">{t("topnav.Portfolios")}</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">{t("topnav.Contact")}</Link>
           </li>
         </ul>
       </div>
@@ -77,7 +87,7 @@ export default function TopNav() {
         </div>
 
         <div className="lanDropdown" onClick={handleDropdown}>
-          {language === "EN" ? (
+          {i18n.language === "en" ? (
             <img src="/navBarImgs/icons8-usa-48.png" alt="language_USA" />
           ) : (
             <img
@@ -98,14 +108,14 @@ export default function TopNav() {
           }
         >
           <img
-            className={ENFlagClass ? "flag flagActive" : "flag"}
-            onClick={handleLanFlag}
+            className={i18n.language === "en" ? "flag flagActive" : "flag"}
+            onClick={() => handleLanFlag("en")}
             src="/navBarImgs/icons8-usa-48.png"
             alt="language_USA"
           />
           <img
-            className={TWFlagClass ? "flag flagActive" : "flag"}
-            onClick={handleLanFlag}
+            className={i18n.language === "tw" ? "flag flagActive" : "flag"}
+            onClick={() => handleLanFlag("tw")}
             src="/navBarImgs/icons8-taiwan-flag-48.png"
             alt="language_Taiwan"
           />
