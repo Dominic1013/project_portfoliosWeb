@@ -3,7 +3,13 @@ import Footer from "../../components/footer/Footer";
 import TopNav from "../../components/topNav/TopNav";
 import "./contact.scss";
 
+//i18n
+import { useTranslation } from "react-i18next";
+
 export default function Contact() {
+  // i18n
+  const { t, i18n } = useTranslation();
+
   const [isCopy, setIsCopy] = useState(false);
 
   // email clip
@@ -23,13 +29,14 @@ export default function Contact() {
       <TopNav />
       <div className="contact">
         <section className="titleSection">
-          <h1 data-aos="fade-up">Flow with me into new possibilities!</h1>
+          <h1 data-aos="fade-up" data-aos-duration="2000">
+            {t("contactPage.h1")}
+          </h1>
           <div className="titleP">
-            <p data-aos="fade-up" data-aos-duration="2500">
-              I eagerly anticipate our communication. Your message is of great
-              importance to me.
+            <p data-aos="fade-up" data-aos-duration="2200">
+              {t("contactPage.p1")}
               <br />
-              Together, let's explore opportunities for collaboration.
+              {t("contactPage.p2")}
             </p>
           </div>
         </section>
@@ -37,9 +44,9 @@ export default function Contact() {
         <section
           className="contentSection"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2400"
         >
-          <h3>Yi-Ti Huang</h3>
+          <h3>{t("contactPage.name")}</h3>
           <div className="spaceDiv"></div>
           <div className="contentBox">
             <div className="contactItem">

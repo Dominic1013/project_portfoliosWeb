@@ -179,5 +179,11 @@
   "portfoliosPage": {
     "h2": "Sorry, this webpage is currently being updated. ",
     "p": "Please click the link below to view the ReadMe on GitHub."
+  },
+  "contactPage": {
+    "h1": "Flow with me into new possibilities!",
+    "p1": "I eagerly anticipate our communication. Your message is of great importance to me.",
+    "p2": "Together, let's explore opportunities for collaboration.",
+    "name": "Yi-Ti Huang"
   }
 }
