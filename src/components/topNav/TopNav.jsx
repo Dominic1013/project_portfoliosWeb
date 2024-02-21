@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./topNav.scss";
+import "./topnav.scss";
 
 //redux
 import { useDispatch, useSelector } from "react-redux";
