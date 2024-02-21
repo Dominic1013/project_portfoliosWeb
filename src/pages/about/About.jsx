@@ -6,9 +6,9 @@ import "./about.scss";
 import { useTranslation } from "react-i18next";
 
 // components
-import AboutHero from "../../components/aboutComponents/aboutHero/AboutHero";
+import AboutHero from "../../components/aboutComponents/aboutHero/AboutHero.jsx";
 import Background from "../../components/aboutComponents/background/Background";
-import EducationalExp from "../../components/aboutComponents/EducationalExp/EducationalExp";
+import EducationalExp from "../../components/aboutComponents/educationalExp/EducationalExp";
 import Personality from "../../components/aboutComponents/personality/Personality";
 import Footer from "../../components/footer/Footer";
 import ContactMe from "../../components/homeComponents/contactMe/ContactMe";
