@@ -21,7 +21,6 @@ export default function Hero() {
           <h2 className={fontClass}>{t("homeHero.contentH2")}</h2>
           <h2 className="typingText">
             <ReactTyped
-              startWhenVisible
               strings={[
                 "Frond-end Developer.",
                 "Coder.",
@@ -45,6 +44,13 @@ export default function Hero() {
       <div className="illustrations">
         <img className="cloud1" src="/parallaxImgs/cloud1.png" alt="cloud1" />
         <img className="cloud3" src="/parallaxImgs/cloud3.png" alt="cloud3" />
+        {/* <img
+          className="surfing"
+          src="/Hero&AboutImgs/Surfing.png"
+          alt="surfing"
+        /> */}
+      </div>
+      <div className="surfingBox">
         <img
           className="surfing"
           src="/Hero&AboutImgs/Surfing.png"

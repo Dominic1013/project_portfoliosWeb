@@ -33,12 +33,10 @@
 
   .logoBox {
     width: fit-content;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    //   border: 1px solid red;
 
     .logoLink {
       display: flex;
@@ -82,17 +80,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.7rem;
+    height: 100%;
 
     .social {
       display: flex;
       justify-content: center;
       align-items: center;
 
-      //   border: 1px solid red;
       a {
         img {
           height: 30px;
+          width: 30px;
           cursor: pointer;
         }
       }
@@ -105,13 +104,16 @@
       align-items: center;
       padding-top: 2px;
       gap: 2px;
+
       cursor: pointer;
 
       img {
-        height: 2rem;
+        height: 32px;
+        width: 32px;
       }
       .dropdownArrow {
         height: 12px;
+        width: 12px;
       }
     }
 
@@ -131,7 +133,8 @@
       visibility: hidden;
       transition: visibility 0s linear 0.3s, opacity 0.3s linear;
       img {
-        height: 2rem;
+        height: 32px;
+        width: 32px;
       }
       .flag {
         border: none;

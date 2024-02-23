@@ -84,6 +84,7 @@
     bottom: 0;
     width: 100%;
     height: 150px;
+    z-index: 2;
     img {
       height: 100%;
     }
@@ -110,6 +111,23 @@
       width: 300px;
       left: 50%;
     }
+    // .surfing {
+    //   position: absolute;
+
+    //   width: 30%;
+    //   bottom: 20%;
+    //   left: 20%;
+    //   animation: surfing 8s infinite;
+    // }
+  }
+
+  .surfingBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
     .surfing {
       position: absolute;
 
@@ -175,6 +193,7 @@
     flex-direction: column;
     .content {
       width: 100%;
+
       .contentBox {
         width: 100%;
       }
@@ -192,7 +211,7 @@
       width: 100%;
     }
     .illustrations {
-      z-index: 2;
+      z-index: -1;
       .cloud1 {
         left: 0;
         width: 200px;
@@ -204,6 +223,15 @@
         width: 200px;
         transform: scaleX(-1);
       }
+      // .surfing {
+      //   width: 20%;
+      //   left: 40%;
+      //   bottom: 17%;
+      //   animation: surfingMd 4s infinite linear;
+      // }
+    }
+
+    .surfingBox {
       .surfing {
         width: 20%;
         left: 40%;
@@ -222,6 +250,15 @@
       }
     }
     .illustrations {
+      // .surfing {
+      //   width: 25%;
+      //   bottom: 13%;
+      //   left: 38%;
+      //   animation: surfingSm 4s infinite linear;
+      // }
+    }
+
+    .surfingBox {
       .surfing {
         width: 25%;
         bottom: 13%;
