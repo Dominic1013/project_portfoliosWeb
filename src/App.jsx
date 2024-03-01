@@ -3,7 +3,7 @@ import MagicNav from "./components/magicNav/MagicNav";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
-import Portfolios from "./pages/portfolios/Portfolios";
+import Portfolio from "./pages/portfolio/Portfolio";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/portfolios" element={<Portfolios />} />
+        <Route path="/portfolios" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <MagicNav />
