@@ -56,8 +56,8 @@ export default function Portfolios() {
           data-aos-delay="600"
         >
           <img
-            src="/portfoliosWeb_portfoliosImgs/portfoliosImg_danceCourse2.png"
-            alt="portfoliosImg_danceCourse2.png"
+            src="/portfoliosWeb_portfoliosImgs/portfoliosImg_danceCourse.png"
+            alt="portfoliosImg_danceCourse.png"
           />
           <div className="cardContent">
             <h2 className="cardTitle">{t("homePortfolios.DanceCourseWeb")}</h2>
