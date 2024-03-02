@@ -6,19 +6,19 @@ import "./portfolio.scss";
 import { MdWeb } from "react-icons/md";
 
 //i18n
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function Portfolio() {
   // i18n
-  // const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-  // const allFontClass =
-  //   i18n.language === "en"
-  //     ? "portfoliosPageWrapper allFont-en"
-  //     : "portfoliosPageWrapper allFont-tw";
+  const allFontClass =
+    i18n.language === "en"
+      ? "portfolioPageWrapper allFont-en"
+      : "portfolioPageWrapper allFont-tw";
 
   return (
-    <div className="portfolioPageWrapper">
+    <div className={allFontClass}>
       <div className="sectionTopNav">
         <TopNav />
       </div>
@@ -30,14 +30,12 @@ export default function Portfolio() {
             className="boxImg"
           />
           <div className="boxContent">
-            <h2>DanceCourse Web</h2>
+            <h2>{t("portfolioPage.boxH2-1")}</h2>
             <p>
-              DanceCourse is a dance class booking website where students can
-              view the latest course offerings from dance instructors.
+              {t("portfolioPage.boxP-1")}
               <br />
               <br />
-              Instructors can create course content through DanceCourse Web,
-              making dancing accessible and straightforward.
+              {t("portfolioPage.boxP1-1")}
             </p>
 
             <div className="boxContentBtns">
@@ -72,14 +70,12 @@ export default function Portfolio() {
             className="boxImg"
           />
           <div className="boxContent">
-            <h2>FormatHolic App</h2>
+            <h2>{t("portfolioPage.boxH2-2")}</h2>
             <p>
-              FormatHolic is an app designed for arranging formations, aimed at
-              assisting those troubled by the task of organizing.
+              {t("portfolioPage.boxP-2")}
               <br />
               <br />
-              It features two modes: a basketball tactics mode and a dance
-              choreography mode, making it suitable for various devices.
+              {t("portfolioPage.boxP2-1")}
             </p>
 
             <div className="boxContentBtns">
@@ -114,18 +110,14 @@ export default function Portfolio() {
             className="boxImg"
           />
           <div className="boxContent">
-            <h2>Kelju Web</h2>
-            <p>
-              Kelju Web is a professional brand identity website featuring a
-              variety of functions including an image homepage, blog, news
-              column, and backend system.
-            </p>
+            <h2>{t("portfolioPage.boxH2-3")}</h2>
+            <p>{t("portfolioPage.boxP-3")}</p>
             {/* <p>
               Instructors can create course content through DanceCourse Web,
               making dancing accessible and straightforward.
             </p> */}
             <div className="boxContentBtns">
-              <div className="cta">
+              {/* <div className="cta">
                 <a href="https://github.com/Dominic1013" target="_blank">
                   <img
                     src="/skillsIcons/35_github_icon.png"
@@ -133,9 +125,9 @@ export default function Portfolio() {
                   />
                   <span>GitHub</span>
                 </a>
-              </div>
+              </div> */}
               <div className="cta">
-                <a href="https://github.com/Dominic1013" target="_blank">
+                <a href="https://kelju-web.vercel.app/" target="_blank">
                   <MdWeb className="icon" />
                   <span>Demo</span>
                 </a>

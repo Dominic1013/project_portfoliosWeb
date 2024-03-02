@@ -51,8 +51,8 @@
     "KeljuWebDesc": "Kelju Web is a professional brand identity website featuring a variety of functions including an image homepage, blog, news column, and backend system.",
     "FormatHolicApp": "FormatHolic App",
     "FormatHolicAppDesc": "FormatHolic is an app designed for arranging formations, aimed at assisting those troubled by the task of organizing. It features two modes: a basketball tactics mode and a dance choreography mode, making it suitable for various devices.",
-    "DanceCourseWeb": "DanceCourse Web",
-    "DanceCourseWebDesc": "DanceCourse is a dance class booking website where students can view the latest course offerings from dance instructors. Instructors can create course content through DanceCourse Web, making dancing accessible and straightforward."
+    "DanceCourseWeb": "Dance Course Web",
+    "DanceCourseWebDesc": "LooseLegs is a dance class booking website where students can view the latest course offerings from dance instructors. Instructors can create course content through LooseLegs Web, making dancing accessible and straightforward."
   },
   "contactMe": {
     "content1": "Let's Make Waves Together!",
@@ -77,8 +77,8 @@
       "sentence6": "models to identify, organize, and address issues, thereby crafting solutions."
     },
     "aboutText2": {
-      "first": "Beyond ",
-      "sentence1": "my professional pursuits, I have a fondness for",
+      "first": "Beyond",
+      "sentence1": " my professional pursuits, I have a fondness for",
       "highlight1": " dancing",
       "dot": ",",
       "highlight2": " music",
@@ -90,11 +90,11 @@
       "highlight5": " immerse myself in my interests",
       "sentence5": ", which leads to",
       "highlight6": " personal growth",
-      "sentence6": "and",
+      "sentence6": " and",
       "highlight7": " introspection",
       "sentence7": ". I place a high emphasis on",
       "highlight8": " positive thinking",
-      "sentence8": "and",
+      "sentence8": " and",
       "highlight9": " perspective shifting",
       "sentence9": ", applying a",
       "highlight10": " human-centric core value",
@@ -177,9 +177,15 @@
     }
   },
 
-  "portfoliosPage": {
-    "h2": "Sorry, this webpage is currently being updated. ",
-    "p": "Please click the link below to view the ReadMe on GitHub."
+  "portfolioPage": {
+    "boxH2-1": "Dance Course Web",
+    "boxP-1": "LooseLegs is a dance class booking website where students can view the latest course offerings from dance instructors.",
+    "boxP1-1": "Instructors can create course content through LooseLegs Web, making dancing accessible and straightforward.",
+    "boxH2-2": "FormatHolic App",
+    "boxP-2": "FormatHolic is an app designed for arranging formations, aimed at assisting those troubled by the task of organizing.",
+    "boxP2-1": "It features two modes: a basketball tactics mode and a dance choreography mode, making it suitable for various devices.",
+    "boxH2-3": "Kelju Web",
+    "boxP-3": "Kelju Web is a professional brand identity website featuring a variety of functions including an image homepage, blog, news column, and backend system."
   },
   "contactPage": {
     "h1": "Flow with me into new possibilities!",
