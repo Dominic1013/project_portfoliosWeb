@@ -40,29 +40,33 @@ export default function Portfolio() {
               <br />
               {t("portfolioPage.boxP1-1")}
             </p>
-
             <div className="boxContentBtns">
-              <div className="cta">
-                <a
-                  href="https://github.com/Dominic1013/project-LooseLegs-danceWeb"
-                  target="_blank"
-                >
-                  <img
-                    src="/skillsIcons/35_github_icon.png"
-                    alt="github_icon"
-                  />
-                  <span>GitHub</span>
-                </a>
+              <div className="ctas">
+                <div className="cta">
+                  <a
+                    href="https://github.com/Dominic1013/project-LooseLegs-danceWeb"
+                    target="_blank"
+                  >
+                    <img
+                      src="/skillsIcons/35_github_icon.png"
+                      alt="github_icon"
+                    />
+                    <span>GitHub</span>
+                  </a>
+                </div>
+                <div className="cta">
+                  <a
+                    href="https://looselegs-danceweb.onrender.com"
+                    target="_blank"
+                  >
+                    <MdWeb className="icon" />
+                    <span>Demo</span>
+                  </a>
+                </div>
               </div>
-              <div className="cta">
-                <a
-                  href="https://looselegs-danceweb.onrender.com"
-                  target="_blank"
-                >
-                  <MdWeb className="icon" />
-                  <span>Demo</span>
-                </a>
-              </div>
+              <p className="warningText">
+                * Due to Render.com restrictions, there might be a short wait.
+              </p>
             </div>
           </div>
         </section>
@@ -82,26 +86,28 @@ export default function Portfolio() {
             </p>
 
             <div className="boxContentBtns">
-              <div className="cta">
-                <a
-                  href="https://github.com/Dominic1013/Project_FormatHolic"
-                  target="_blank"
-                >
-                  <img
-                    src="/skillsIcons/35_github_icon.png"
-                    alt="github_icon"
-                  />
-                  <span>GitHub</span>
-                </a>
-              </div>
-              <div className="cta">
-                <a
-                  href="https://github.com/Dominic1013/Project_FormatHolic"
-                  target="_blank"
-                >
-                  <MdWeb className="icon" />
-                  <span>Demo</span>
-                </a>
+              <div className="ctas">
+                <div className="cta">
+                  <a
+                    href="https://github.com/Dominic1013/Project_FormatHolic"
+                    target="_blank"
+                  >
+                    <img
+                      src="/skillsIcons/35_github_icon.png"
+                      alt="github_icon"
+                    />
+                    <span>GitHub</span>
+                  </a>
+                </div>
+                <div className="cta">
+                  <a
+                    href="https://github.com/Dominic1013/Project_FormatHolic"
+                    target="_blank"
+                  >
+                    <MdWeb className="icon" />
+                    <span>Demo</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -115,10 +121,7 @@ export default function Portfolio() {
           <div className="boxContent">
             <h2>{t("portfolioPage.boxH2-3")}</h2>
             <p>{t("portfolioPage.boxP-3")}</p>
-            {/* <p>
-              Instructors can create course content through DanceCourse Web,
-              making dancing accessible and straightforward.
-            </p> */}
+
             <div className="boxContentBtns">
               {/* <div className="cta">
                 <a href="https://github.com/Dominic1013" target="_blank">
@@ -129,11 +132,14 @@ export default function Portfolio() {
                   <span>GitHub</span>
                 </a>
               </div> */}
-              <div className="cta">
-                <a href="https://kelju-web.vercel.app/" target="_blank">
-                  <MdWeb className="icon" />
-                  <span>Demo</span>
-                </a>
+              <div className="ctas">
+                {" "}
+                <div className="cta">
+                  <a href="https://kelju-web.vercel.app/" target="_blank">
+                    <MdWeb className="icon" />
+                    <span>Demo</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
