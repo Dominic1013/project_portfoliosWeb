@@ -18,6 +18,28 @@
     justify-content: center;
     align-items: center;
     gap: 6rem;
+    .text-en {
+      font-family: "Chakra Petch", sans-serif;
+    }
+    .text-tw {
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    h1 {
+      position: relative;
+      font-size: 3.5rem;
+      line-height: 5.25rem;
+      font-weight: 700;
+
+      &::before {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 5px;
+        border-radius: 10px;
+        background: var(--gradientColor);
+      }
+    }
 
     // border: 2px solid red;
     .portfolioBox {
@@ -101,6 +123,10 @@
 @media screen and (max-width: 1024px) {
   .portfolioPageWrapper {
     .portfolioPage {
+      h1 {
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+      }
       .portfolioBox {
         flex-direction: column;
         padding: 1.5rem;
@@ -126,6 +152,11 @@
 @media screen and (max-width: 500px) {
   .portfolioPageWrapper {
     .portfolioPage {
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 3rem;
+      }
       .portfolioBox {
         .boxContent {
           .boxContentBtns {

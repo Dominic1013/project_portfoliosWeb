@@ -178,6 +178,7 @@
   },
 
   "portfolioPage": {
+    "title": "My Recent Works",
     "boxH2-1": "Dance Course Web",
     "boxP-1": "LooseLegs is a dance class booking website where students can view the latest course offerings from dance instructors.",
     "boxP1-1": "Instructors can create course content through LooseLegs Web, making dancing accessible and straightforward.",

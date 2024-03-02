@@ -17,12 +17,15 @@ export default function Portfolio() {
       ? "portfolioPageWrapper allFont-en"
       : "portfolioPageWrapper allFont-tw";
 
+  const fontClass = i18n.language === "en" ? "text-en" : "text-tw";
+
   return (
     <div className={allFontClass}>
       <div className="sectionTopNav">
         <TopNav />
       </div>
       <div className="portfolioPage">
+        <h1 className={fontClass}>{t("portfolioPage.title")}</h1>
         <section className="portfolioBox">
           <img
             src="/portfoliosWeb_portfoliosImgs/portfoliosImg_danceCourse.png"
