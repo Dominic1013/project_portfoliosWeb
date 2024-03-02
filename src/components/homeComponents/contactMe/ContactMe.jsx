@@ -17,14 +17,14 @@ export default function ContactMe() {
       </div>
 
       <div className="contactMeContent">
-        <h2 data-aos="fade" className={fontClass}>
+        <h2 className={fontClass}>
           {t("contactMe.content1")}
           <br />
           {t("contactMe.content2")}
         </h2>
       </div>
 
-      <div className="cta" data-aos="fade-up" data-aos-delay="200">
+      <div className="cta">
         <Link to="/contact">
           <span>{t("contactMe.cta")}</span>
           <img

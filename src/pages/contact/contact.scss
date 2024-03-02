@@ -45,7 +45,6 @@
       h1 {
         font-size: 3.5rem;
         line-height: 5.25rem;
-        font-family: "Chakra Petch", sans-serif;
         font-weight: 700;
       }
       .titleP {
@@ -80,6 +79,7 @@
 
       .contentBox {
         position: relative;
+
         width: 700px;
         background: rgb(10, 109, 159, 5%);
         padding: 3rem 0rem;
@@ -92,6 +92,7 @@
         &::before {
           content: "";
           position: absolute;
+          z-index: -1;
           top: 0;
           right: 0;
           border-top: 4px solid var(--PrimaryColor);
@@ -103,6 +104,7 @@
         &::after {
           content: "";
           position: absolute;
+          z-index: -1;
           bottom: 0;
           left: 0;
           border-bottom: 4px solid var(--PrimaryColor);
@@ -118,6 +120,19 @@
           //   border: 2px solid red;
           img {
             width: 38px;
+          }
+          a {
+            &:hover {
+              opacity: 0.8;
+            }
+            p {
+              font-size: 1.5rem;
+              line-height: 2.25rem;
+              font-weight: 500;
+              color: var(--PrimaryColor);
+              padding-left: 2rem;
+              padding-right: 0.5rem;
+            }
           }
           p {
             font-size: 1.5rem;
@@ -206,6 +221,13 @@
               padding: 0;
               font-size: 1rem;
               line-height: 1.5rem;
+            }
+            a {
+              p {
+                padding: 0;
+                font-size: 1rem;
+                line-height: 1.5rem;
+              }
             }
           }
         }

@@ -59,7 +59,21 @@ export default function Contact() {
           <div className="contentBox">
             <div className="contactItem">
               <img src="/skillsIcons/35_github_icon.png" alt="github_icon" />
-              <p>GitHub/Dominic1013</p>
+              <a href="https://github.com/Dominic1013" target="_blank">
+                <p>GitHub/Dominic1013</p>
+              </a>
+            </div>
+            <div className="contactItem">
+              <img
+                src="/skillsIcons/icons8-linkedin-48.png"
+                alt="Linkedin_icon"
+              />
+              <a
+                href="https://www.linkedin.com/in/yi-ti-huang-8269602b6/"
+                target="_blank"
+              >
+                <p>Linkedin/Yi-Ti Huang</p>
+              </a>
             </div>
             <div className="contactItem">
               <img src="/skillsIcons/icons8-mail-38.png" alt="mail_icon" />
