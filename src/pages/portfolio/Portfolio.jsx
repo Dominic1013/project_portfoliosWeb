@@ -44,7 +44,7 @@ export default function Portfolio() {
               <div className="ctas">
                 <div className="cta">
                   <a
-                    href="https://github.com/Dominic1013/project-LooseLegs-danceWeb"
+                    href="https://github.com/Dominic1013/project_danceWebLooseLegs_vercel"
                     target="_blank"
                   >
                     <img
@@ -56,7 +56,7 @@ export default function Portfolio() {
                 </div>
                 <div className="cta">
                   <a
-                    href="https://looselegs-danceweb.onrender.com"
+                    href="https://project-looselegs-v-client.vercel.app/"
                     target="_blank"
                   >
                     <MdWeb className="icon" />
@@ -64,9 +64,6 @@ export default function Portfolio() {
                   </a>
                 </div>
               </div>
-              <p className="warningText">
-                * Due to Render.com restrictions, there might be a short wait.
-              </p>
             </div>
           </div>
         </section>
@@ -123,15 +120,6 @@ export default function Portfolio() {
             <p>{t("portfolioPage.boxP-3")}</p>
 
             <div className="boxContentBtns">
-              {/* <div className="cta">
-                <a href="https://github.com/Dominic1013" target="_blank">
-                  <img
-                    src="/skillsIcons/35_github_icon.png"
-                    alt="github_icon"
-                  />
-                  <span>GitHub</span>
-                </a>
-              </div> */}
               <div className="ctas">
                 {" "}
                 <div className="cta">
@@ -149,25 +137,5 @@ export default function Portfolio() {
         <Footer />
       </div>
     </div>
-    // <div className={allFontClass}>
-    //   <div className="sectionTopNav">
-    //     <TopNav />
-    //   </div>
-    //   <div className="portfoliosPage">
-    //     <div className="portfoliosPageText">
-    //       <h2>{t("portfoliosPage.h2")}</h2>
-    //       <p>{t("portfoliosPage.p")}</p>
-    //     </div>
-    //     <div className="cta">
-    //       <a href="https://github.com/Dominic1013" target="_blank">
-    //         <img src="/skillsIcons/35_github_icon.png" alt="github_icon" />
-    //       </a>
-    //     </div>
-    //   </div>
-
-    //   <div className="sectionFooter">
-    //     <Footer />
-    //   </div>
-    // </div>
   );
 }
